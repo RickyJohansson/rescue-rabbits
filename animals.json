@@ -1,0 +1,204 @@
+{
+    "animals": [
+      {
+        "name": "Nasse",
+        "animal": "Minigris",
+        "age": "2",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptas cupiditate incidunt qui temporibus repudiandae nihil fugit facilis. Vel soluta exercitationem ea consequatur libero quia necessitatibus rem distinctio laboriosam accusantium!",
+        "uploaded": "2022-09-01",
+        "location": "Stockholm",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Nalle",
+        "animal": "Hund",
+        "age": "2",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ratione dolores. Accusamus corporis nesciunt quaerat! Libero, nemo. Tenetur provident harum iusto, necessitatibus quas voluptas facere velit sit et. Excepturi, asperiores.",
+        "uploaded": "2022-09-01",
+        "location": "Stockholm",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Glenn",
+        "animal": "Hamster",
+        "age": "1",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet magni animi nisi unde optio quas delectus dignissimos, quod quam est ullam minima, consectetur perferendis aliquam sapiente! Sit, tenetur culpa.",
+        "uploaded": "2022-09-01",
+        "location": "Göteborg",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Doris",
+        "animal": "Markatta",
+        "age": "5",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ea quo harum eius tenetur vitae voluptatum consequuntur numquam laborum voluptatibus quis, at libero quaerat nostrum ipsa. Aperiam quidem soluta ad!",
+        "uploaded": "2022-09-01",
+        "location": "Karlstad",
+        "image": "https://via.placeholder.com/150",
+        "gender": "female"
+      },
+      {
+        "name": "Boris",
+        "animal": "Hund",
+        "age": "5",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
+        "uploaded": "2022-09-01",
+        "location": "Ulricehamn",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Chip",
+        "animal": "Markatta",
+        "age": "2",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
+        "uploaded": "2022-09-01",
+        "location": "Luleå",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Ulf",
+        "animal": "Katt",
+        "age": "11",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laboriosam corporis vitae aliquid esse dignissimos ducimus sit laudantium impedit odio nihil maiores atque tempore molestiae, architecto totam reiciendis unde id.",
+        "uploaded": "2022-09-01",
+        "location": "Karlstad",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Ricky",
+        "animal": "Hund",
+        "age": "4",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
+        "uploaded": "2022-09-01",
+        "location": "Frödingshöjd",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "William",
+        "animal": "Markatta",
+        "age": "14",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis laborum, labore ad ipsa rem perspiciatis itaque amet tempora nam eum nostrum mollitia natus voluptate vitae harum deserunt nisi? Esse.",
+        "uploaded": "2022-09-01",
+        "location": "Karlstad",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Hampus",
+        "animal": "Minigris",
+        "age": "5",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
+        "uploaded": "2022-09-01",
+        "location": "Säffle",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Rolf",
+        "animal": "Minigris",
+        "age": "9",
+        "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptas cupiditate incidunt qui temporibus repudiandae nihil fugit facilis. Vel soluta exercitationem ea consequatur libero quia necessitatibus rem distinctio laboriosam accusantium!",
+        "uploaded": "2022-09-01",
+        "location": "Ljungskile",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Åsa",
+        "animal": "Hamster",
+        "age": "1",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ratione dolores. Accusamus corporis nesciunt quaerat! Libero, nemo. Tenetur provident harum iusto, necessitatibus quas voluptas facere velit sit et. Excepturi, asperiores.",
+        "uploaded": "2022-09-01",
+        "location": "Borlänge",
+        "image": "https://via.placeholder.com/150",
+        "gender": "female"
+      },
+      {
+        "name": "Felix",
+        "animal": "Katt",
+        "age": "9",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet magni animi nisi unde optio quas delectus dignissimos, quod quam est ullam minima, consectetur perferendis aliquam sapiente! Sit, tenetur culpa.",
+        "uploaded": "2022-09-01",
+        "location": "Åtvidaberg",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Ida",
+        "animal": "Markatta",
+        "age": "18",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ea quo harum eius tenetur vitae voluptatum consequuntur numquam laborum voluptatibus quis, at libero quaerat nostrum ipsa. Aperiam quidem soluta ad!",
+        "uploaded": "2022-09-01",
+        "location": "Kil",
+        "image": "https://via.placeholder.com/150",
+        "gender": "female"
+      },
+      {
+        "name": "Linus",
+        "animal": "Hund",
+        "age": "6",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
+        "uploaded": "2022-09-01",
+        "location": "Örebro",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Tim",
+        "animal": "Hamster",
+        "age": "2",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
+        "uploaded": "2022-09-01",
+        "location": "Säffle",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Monica",
+        "animal": "Hund",
+        "age": "2",
+        "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laboriosam corporis vitae aliquid esse dignissimos ducimus sit laudantium impedit odio nihil maiores atque tempore molestiae, architecto totam reiciendis unde id.",
+        "uploaded": "2022-09-01",
+        "location": "Vänersborg",
+        "image": "https://via.placeholder.com/150",
+        "gender": "female"
+      },
+      {
+        "name": "Julia",
+        "animal": "Hund",
+        "age": "7",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
+        "uploaded": "2022-09-01",
+        "location": "Karlskoga",
+        "image": "https://via.placeholder.com/150",
+        "gender": "female"
+      },
+      {
+        "name": "Pelle",
+        "animal": "Katt",
+        "age": "9",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis laborum, labore ad ipsa rem perspiciatis itaque amet tempora nam eum nostrum mollitia natus voluptate vitae harum deserunt nisi? Esse.",
+        "uploaded": "2022-09-01",
+        "location": "Trollhättan",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      },
+      {
+        "name": "Christopher",
+        "animal": "Hamster",
+        "age": "3",
+        "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
+        "uploaded": "2022-09-01",
+        "location": "Sundsvall",
+        "image": "https://via.placeholder.com/150",
+        "gender": "male"
+      }
+    ]
+  }
