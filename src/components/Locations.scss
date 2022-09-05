@@ -1,11 +1,9 @@
 aside {
     grid-area: side;
-    border: solid 1px red;
     position: sticky;
     right: 0;
     top: 0;
     background-color: #f5f5f5;
-    color: black;
     display: flex;
     justify-content: center;
   }

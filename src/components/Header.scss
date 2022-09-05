@@ -43,7 +43,9 @@ header form input {
     outline: none;
     border-radius: 10px;
     text-align: center;
-    border: 1px solid rgb(35, 35, 35);
+    // border: 1px solid rgb(35, 35, 35);
+    box-shadow: 0px 1px 5px 0px #676767;
+    border: none;
 }
 
 header form a:hover {

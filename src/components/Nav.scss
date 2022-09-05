@@ -1,11 +1,9 @@
 nav {
     grid-area: nav;
-    border: solid 1px red;
     position: sticky;
     left: 0;
     bottom: 50;
     background-color: #f5f5f5;
-    color: black;
     display: flex;
     justify-content: center;
   }

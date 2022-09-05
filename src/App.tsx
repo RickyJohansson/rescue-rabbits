@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Location from "./components/Locations";
+import Footer from './components/Footer';
 function App() {
 
   return (
@@ -13,11 +14,9 @@ function App() {
       <Nav />
       <Main />
       <Location />
-      <footer>
-        <h1>Rescue Rabbits</h1>
-      </footer>
+      <Footer />
     </div>
-    
+
   );
 }
 
