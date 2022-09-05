@@ -1,8 +1,5 @@
 function Locations() {
-    return (
-        <>
-        </>
-    );
+  return <></>;
 }
 
 export default Locations;
