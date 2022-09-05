@@ -6,7 +6,7 @@ function Card() {
     <>
       <article className="animalCard">
         <h1>{animalName}</h1>
-        <img src="https://placehold.jp/150x150.png" alt="" />
+        <img src="https://placehold.jp/220x180.png" alt="" />
       </article>
     </>
   );

@@ -1,5 +1,6 @@
 import "./Cards.scss";
 import Card from "./Card";
+
 function Cards() {
   return (
     <>
