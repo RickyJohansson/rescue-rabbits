@@ -18,6 +18,7 @@
   grid-gap: 0.1rem;
 }
 
+<<<<<<< Updated upstream
 nav {
   grid-area: nav;
 
@@ -28,6 +29,17 @@ nav {
   display: flex;
   justify-content: center;
 }
+=======
+header {
+  grid-area: header;
+  border: solid 1px red;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fec200;
+}
+
+>>>>>>> Stashed changes
 
 aside {
   grid-area: side;
@@ -41,11 +53,6 @@ aside {
 }
 
 aside h1 {
-  padding-bottom: 6rem;
-  position: fixed;
-}
-
-nav h1 {
   padding-bottom: 6rem;
   position: fixed;
 }
