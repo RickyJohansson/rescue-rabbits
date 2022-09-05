@@ -20,7 +20,7 @@
 
 nav {
   grid-area: nav;
-  border: solid 1px red;
+
   position: sticky;
   left: 0;
   bottom: 50;
@@ -29,10 +29,9 @@ nav {
   justify-content: center;
 }
 
-
 aside {
   grid-area: side;
-  border: solid 1px red;
+
   position: sticky;
   right: 0;
   top: 0;
@@ -73,7 +72,7 @@ li {
 
 footer {
   grid-area: footer;
-  border: solid 1px red;
+
   bottom: 0;
   z-index: 1;
   background-color: #473f3f;
