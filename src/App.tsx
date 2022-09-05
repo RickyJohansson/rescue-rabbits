@@ -11,19 +11,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <nav>
-        <h1>NAVIGERING</h1>
-        <ul>
-          <li>HUNDAR</li>
-          <li>KATTER</li>
-          <li>MARKATTOR</li>
-          <li>MINIGRISAR</li>
-          <li>HAMSTRAR</li>
-        </ul>
-      </nav>
-      <header>
-        <h1>Rescue Rabbits</h1>
-      </header>
       <Nav />
       <Main />
       <Location />
