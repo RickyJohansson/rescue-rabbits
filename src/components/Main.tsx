@@ -1,5 +1,11 @@
+import "./Main.scss";
+
 function Main() {
-  return <></>;
+  return (
+    <>
+      <main></main>
+    </>
+  );
 }
 
 export default Main;
