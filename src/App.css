@@ -20,7 +20,6 @@
 
 nav {
   grid-area: nav;
-
   position: sticky;
   left: 0;
   bottom: 50;

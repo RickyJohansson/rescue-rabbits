@@ -1,4 +1,7 @@
 import "./Card.scss";
+import Animals from "../animals.json";
+
+console.log(Animals);
 
 let animalName = "Charles";
 function Card() {
