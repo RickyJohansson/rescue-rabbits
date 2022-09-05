@@ -5,10 +5,14 @@ import Search_Btn from '../assets/search-btn.svg';
 function Header() {
     return (
         <header>
-            <img className='logo' src={ Logo } alt="" />
-            <h1>Rescue Rabbits</h1>
-            <input type="text" placeholder='SÖK' />
-            <img className='search-btn' src={ Search_Btn } alt="" />
+            <section>
+                <img className='logo' src={ Logo } alt="" />
+                <h1>Rescue Rabbits</h1>
+            </section>
+            <form action="">
+                <input type="text" placeholder='SÖK' />
+                <a><img className='search-btn' src={ Search_Btn } alt="" /></a>
+            </form>
         </header>
     );
 }

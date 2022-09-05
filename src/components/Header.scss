@@ -10,6 +10,12 @@ header {
   padding: 0 1em 0 1em;
 }
 
+header section {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
 header h1 {
   font-size: 36px;
   margin: 0 auto;
@@ -23,4 +29,27 @@ header input {
 
 header .search-btn {
   width: 35px;
+
+    font-size: 36px;
+}
+
+form {
+    display: flex; 
+}
+
+header form input {
+    height: 2em;
+    font-size: 18px;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid rgb(35, 35, 35);
+}
+
+header form a:hover {
+    cursor: pointer;
+}
+
+header form .search-btn {
+    width: 35px;
 }
