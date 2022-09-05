@@ -8,7 +8,8 @@
         "uploaded": "2022-09-01",
         "location": "Stockholm",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Nalle",
@@ -18,7 +19,8 @@
         "uploaded": "2022-09-01",
         "location": "Stockholm",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Glenn",
@@ -28,7 +30,8 @@
         "uploaded": "2022-09-01",
         "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Doris",
@@ -38,7 +41,8 @@
         "uploaded": "2022-09-01",
         "location": "Karlstad",
         "image": "https://via.placeholder.com/150",
-        "gender": "female"
+        "gender": "female",
+        "adopted": "false"
       },
       {
         "name": "Boris",
@@ -46,9 +50,10 @@
         "age": "5",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
         "uploaded": "2022-09-01",
-        "location": "Ulricehamn",
+        "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Chip",
@@ -56,9 +61,10 @@
         "age": "2",
         "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
         "uploaded": "2022-09-01",
-        "location": "Luleå",
+        "location": "Karlstad",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Ulf",
@@ -68,7 +74,8 @@
         "uploaded": "2022-09-01",
         "location": "Karlstad",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Ricky",
@@ -76,9 +83,10 @@
         "age": "4",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
         "uploaded": "2022-09-01",
-        "location": "Frödingshöjd",
+        "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "William",
@@ -88,7 +96,8 @@
         "uploaded": "2022-09-01",
         "location": "Karlstad",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Hampus",
@@ -96,9 +105,10 @@
         "age": "5",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
         "uploaded": "2022-09-01",
-        "location": "Säffle",
+        "location": "Stockholm",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Rolf",
@@ -106,9 +116,10 @@
         "age": "9",
         "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptas cupiditate incidunt qui temporibus repudiandae nihil fugit facilis. Vel soluta exercitationem ea consequatur libero quia necessitatibus rem distinctio laboriosam accusantium!",
         "uploaded": "2022-09-01",
-        "location": "Ljungskile",
+        "location": "Stockholm",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Åsa",
@@ -116,9 +127,10 @@
         "age": "1",
         "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ratione dolores. Accusamus corporis nesciunt quaerat! Libero, nemo. Tenetur provident harum iusto, necessitatibus quas voluptas facere velit sit et. Excepturi, asperiores.",
         "uploaded": "2022-09-01",
-        "location": "Borlänge",
+        "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "female"
+        "gender": "female",
+        "adopted": "false"
       },
       {
         "name": "Felix",
@@ -126,9 +138,10 @@
         "age": "9",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet magni animi nisi unde optio quas delectus dignissimos, quod quam est ullam minima, consectetur perferendis aliquam sapiente! Sit, tenetur culpa.",
         "uploaded": "2022-09-01",
-        "location": "Åtvidaberg",
+        "location": "Linköping",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Ida",
@@ -136,9 +149,10 @@
         "age": "18",
         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ea quo harum eius tenetur vitae voluptatum consequuntur numquam laborum voluptatibus quis, at libero quaerat nostrum ipsa. Aperiam quidem soluta ad!",
         "uploaded": "2022-09-01",
-        "location": "Kil",
+        "location": "Linköping",
         "image": "https://via.placeholder.com/150",
-        "gender": "female"
+        "gender": "female",
+        "adopted": "false"
       },
       {
         "name": "Linus",
@@ -146,9 +160,10 @@
         "age": "6",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
         "uploaded": "2022-09-01",
-        "location": "Örebro",
+        "location": "Linköping",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Tim",
@@ -156,9 +171,10 @@
         "age": "2",
         "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
         "uploaded": "2022-09-01",
-        "location": "Säffle",
+        "location": "Linköping",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Monica",
@@ -166,9 +182,10 @@
         "age": "2",
         "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laboriosam corporis vitae aliquid esse dignissimos ducimus sit laudantium impedit odio nihil maiores atque tempore molestiae, architecto totam reiciendis unde id.",
         "uploaded": "2022-09-01",
-        "location": "Vänersborg",
+        "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "female"
+        "gender": "female",
+        "adopted": "false"
       },
       {
         "name": "Julia",
@@ -176,9 +193,10 @@
         "age": "7",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
         "uploaded": "2022-09-01",
-        "location": "Karlskoga",
+        "location": "Göteborg",
         "image": "https://via.placeholder.com/150",
-        "gender": "female"
+        "gender": "female",
+        "adopted": "false"
       },
       {
         "name": "Pelle",
@@ -186,9 +204,10 @@
         "age": "9",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis laborum, labore ad ipsa rem perspiciatis itaque amet tempora nam eum nostrum mollitia natus voluptate vitae harum deserunt nisi? Esse.",
         "uploaded": "2022-09-01",
-        "location": "Trollhättan",
+        "location": "Linköping",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       },
       {
         "name": "Christopher",
@@ -196,9 +215,10 @@
         "age": "3",
         "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
         "uploaded": "2022-09-01",
-        "location": "Sundsvall",
+        "location": "Karlstad",
         "image": "https://via.placeholder.com/150",
-        "gender": "male"
+        "gender": "male",
+        "adopted": "false"
       }
     ]
   }
