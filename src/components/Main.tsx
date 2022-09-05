@@ -1,9 +1,11 @@
 import "./Main.scss";
-
+import Cards from "./Cards";
 function Main() {
   return (
     <>
-      <main></main>
+      <main>
+        <Cards />
+      </main>
     </>
   );
 }

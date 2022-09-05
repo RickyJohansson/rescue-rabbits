@@ -8,7 +8,6 @@ function Card() {
         <h1>{animalName}</h1>
         <img src="https://placehold.jp/150x150.png" alt="" />
       </article>
-      ;
     </>
   );
 }
