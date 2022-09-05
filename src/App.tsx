@@ -106,6 +106,62 @@ function App() {
             sapiente.
           </p>
         </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
+        <article className="animalCard">
+          <h1>Charles</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            sapiente.
+          </p>
+        </article>
       </main>
 
       <aside>
