@@ -7,6 +7,8 @@ import Location from "./components/Locations";
 import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
+import { Routes, Route } from "react-router-dom";
+import ViewAnimal from "./Views/ViewAnimal";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
@@ -14,7 +16,11 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Main animals={animals} />
+      <Routes>
+        <Route path="1" element={<ViewAnimal />} />
+        <Route path="/" element={<Main animals={animals} />} />
+      </Routes>
+
       <Location />
       <Footer />
     </div>

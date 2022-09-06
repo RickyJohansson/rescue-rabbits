@@ -13,7 +13,6 @@ const Card = ({ animal }: Props) => {
         <article className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
-          <p>{animal.desc}</p>
           <div>
             <img
               className="adoptedTag"
@@ -30,7 +29,6 @@ const Card = ({ animal }: Props) => {
         <article className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
-          <p>{animal.desc}</p>
         </article>
       </>
     );

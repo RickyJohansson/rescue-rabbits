@@ -10,8 +10,11 @@
   background-color: white;
   position: relative;
   border-radius: 5px;
-}
 
+  :hover {
+    cursor: pointer;
+  }
+}
 .animalCard p {
   font-size: 12px;
   line-height: 12px;
@@ -32,4 +35,5 @@
 
 .animalCard img {
   width: 100%;
+  aspect-ratio: 1;
 }
