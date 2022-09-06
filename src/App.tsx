@@ -4,17 +4,12 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Location from "./components/Locations";
-
-import Footer from './components/Footer';
 import AnimalOverlay from "./components/AnimalOverlay";
-function App() {
-
 import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
 import AdoptionForm from "./Views/adoptionForm";
-
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
@@ -23,7 +18,6 @@ function App() {
     <div className="App">
       <Header />
       <Nav />
-      <Main />
       <AnimalOverlay />
       <Routes>
         <Route path="1" element={<AdoptionForm />} />
