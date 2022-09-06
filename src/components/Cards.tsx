@@ -1,33 +1,18 @@
+import React, { useState } from "react";
 import "./Cards.scss";
 import Card from "./Card";
+import { Animal } from "../models/animalInterface";
 
-function Cards() {
-  return (
-    <>
-      <div className="cardsContainer">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </div>
-    </>
-  );
+interface Props {
+  animals: Animal[];
 }
 
-export default Cards;
+const CardGrid = ({ animals }: Props) => (
+  <section className="cardsContainer">
+    {animals.map((animal) => (
+      <Card key={animal.animalId} animal={animal} />
+    ))}
+  </section>
+);
+
+export default CardGrid;
