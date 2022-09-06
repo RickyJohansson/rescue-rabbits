@@ -13,8 +13,12 @@ import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
+<<<<<<< Updated upstream
 import ViewAnimal from "./Views/ViewAnimal";
 
+=======
+import AdoptionForm from "./Views/Adoptionform";
+>>>>>>> Stashed changes
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
