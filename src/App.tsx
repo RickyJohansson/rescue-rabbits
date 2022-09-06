@@ -8,16 +8,17 @@ import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
-import ViewAnimal from "./Views/ViewAnimal";
+import AdoptionForm from "./Views/adoptionForm";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
+
   return (
     <div className="App">
       <Header />
       <Nav />
       <Routes>
-        <Route path="1" element={<ViewAnimal />} />
+        <Route path="1" element={<AdoptionForm />} />
         <Route path="/" element={<Main animals={animals} />} />
       </Routes>
 
