@@ -1,12 +1,33 @@
 .animalCard {
-  width: 12rem;
-  height: 14rem;
+  width: 16rem;
+  height: 18rem;
   padding: 1rem;
   margin: 2rem;
   -moz-box-shadow: 0px 1px 5px 0px #676767;
   -webkit-box-shadow: 0px 1px 5px 0px #676767;
   box-shadow: 0px 1px 5px 0px #676767;
   text-align: center;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+}
+
+.animalCard p {
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0;
+}
+.animalCard h1 {
+  margin: 0;
+}
+.animalCard div {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+}
+.animalCard .adoptedTag {
+  position: relative;
+  z-index: 1;
 }
 
 .animalCard img {
