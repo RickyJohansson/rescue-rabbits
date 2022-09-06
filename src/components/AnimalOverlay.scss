@@ -1,0 +1,73 @@
+.animal-overlay {
+    position: absolute;
+    background-color: white;
+    z-index: 2;
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: 0px 1px 5px 0px #676767;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2em;
+    display: none;
+}
+
+.overlay-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+}
+
+.animal-overlay h1, .animal-overlay h2 {
+    text-align: center;
+}
+
+.vet-logo {
+    width: 90px;
+    position: absolute;
+}
+
+.animal-overlay h2 {
+    margin-top: 0;
+}
+
+.close-btn-wrapper {
+    align-self: flex-end;
+    position: absolute;
+}
+
+.close-btn {
+    width: 30px;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-wrapper p {
+    margin: 0.2em;
+}
+
+.link-text {
+    text-align: center;
+}
+
+button {
+    appearance: none;
+    background-color: #1C4686;
+    color: white;
+    width: 50%;
+    align-self: center;
+    border: none;
+    padding: 1.5em 2em;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
