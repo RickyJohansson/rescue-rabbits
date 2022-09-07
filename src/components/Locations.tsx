@@ -1,16 +1,20 @@
 import './Locations.scss';
 import { Animal } from "../models/animalInterface";
+import jsonData from "../animals.json";
 
 interface Props {
-    animals: Animal[],
     setAnimals: (animals: Animal[]) => void;
 }
 
-function Locations({animals, setAnimals}: Props) {
+function Locations({setAnimals}: Props) {
 
   const handleLocation = (e: any) => {
-    let filteredLocations = animals.filter(location => location.location === e.target.innerHTML)
-    setAnimals(filteredLocations);
+
+    const allAnimals = jsonData.animals
+
+    const filteredLocations = [...allAnimals];
+    let newFilteredLocations = filteredLocations.filter(location => location.location === e.target.innerHTML)
+    setAnimals(newFilteredLocations);
 }
 
   return (

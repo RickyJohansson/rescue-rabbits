@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Nav animals={animals} setAnimals={setAnimals}/>
+      <Nav setAnimals={setAnimals}/>
       {/* <AnimalOverlay /> */}
       <Routes>
         <Route path="1" element={<AdoptionForm />} />
@@ -35,7 +35,7 @@ function App() {
           }
         />
       </Routes>
-      <Location animals={animals} setAnimals={setAnimals}/>
+      <Location setAnimals={setAnimals}/>
       <Footer />
     </div>
   );
