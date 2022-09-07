@@ -3,8 +3,8 @@ import React from "react";
 
 const adoptionForm = () => {
   return (
-    <div>
-      <div className="adoptionContainer">
+    <div className="adoptionContainer">
+      <section>
         <h1> Vad kul att du vill rädda ett djur!</h1>
         <p>
           Att adoptera ett djur ger dig inte bara en ny vän, utan en ny
@@ -14,35 +14,43 @@ const adoptionForm = () => {
           för djuret. För att göra en intresseanmälan för djuret behöver du
           fylla i detta formulär.
         </p>
-      </div>
-      <div className="container">
-        <form action="submit">
-          <label htmlFor="fname">First Name</label>
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your name.."
-          ></input>
-
-          <label htmlFor="lname">Last Name</label>
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-          ></input>
-
-          <label htmlFor="subject">Adress</label>
-          <textarea
-            id="subject"
-            name="subject"
-            placeholder="Skriv din adress här."
-          ></textarea>
-
-          <input type="submit" value="Submit"></input>
-        </form>
-      </div>
+        <div className="container">
+          <form action="submit">
+            <div className="flex-column">
+              <label htmlFor="fname">Namn</label>
+              <input
+                required
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Ditt namn"
+              ></input>
+            </div>
+            <div className="flex-column">
+              <label htmlFor="lname">E-post</label>
+              <input
+                required
+                type="text"
+                id="lname"
+                name="lastname"
+                placeholder="Your last name.."
+              ></input>
+            </div>
+            <div className="flex-column">
+              <label htmlFor="adress">Adress</label>
+              <textarea
+                required
+                id="adress"
+                name="adress"
+                placeholder="Skriv din adress här."
+              ></textarea>
+            </div>
+            <div>
+              <input className="submit" type="submit" value="Skicka"></input>
+            </div>
+          </form>
+        </div>
+      </section>
     </div>
   );
 };

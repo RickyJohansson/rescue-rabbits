@@ -76,7 +76,8 @@ const Main = ({
               </div>
             </div>
             <p className="link-text">
-              Läs mer om HUNDAR och hur man sköter dem <a href="#">HÄR!</a>
+              Läs mer om {chosenAnimal.animal} och hur man sköter dem{" "}
+              <a href="#">HÄR!</a>
             </p>
             <button className="animal-btn">ANMÄL INTRESSE</button>
           </section>
