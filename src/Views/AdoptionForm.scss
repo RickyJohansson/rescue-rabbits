@@ -56,9 +56,11 @@
 
 .radio-buttons-container {
   display: flex;
-  width: 14rem;
+  width: 14.25rem;
   justify-content: center;
   flex-direction: column;
+  margin: 1rem;
+  padding: 0.5rem;
 
   p {
     padding: 0;

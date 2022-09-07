@@ -14,6 +14,10 @@ const adoptionForm = ({ setHiddenCss }: Props) => {
     navigate("/");
   };
 
+  const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    event.target.value;
+  };
+
   return (
     <div className="adoptionContainer">
       <h1> Vad kul att du vill rädda ett djur!</h1>
@@ -82,13 +86,30 @@ const adoptionForm = ({ setHiddenCss }: Props) => {
             <div className="radio-question">
               <p>Har du haft djur tidigare?</p>
             </div>
-            <div>
-              <input
-                className="submit"
-                type="submit"
-                value="Skicka"
-                onClick={gotoStart}
-              ></input>
+            <div className="flex-row">
+              <div className="flex-row">
+                <input
+                  className="radio-btn"
+                  type="radio"
+                  id="yes"
+                  name="choose"
+                  value="yes"
+                  onChange={radioHandler}
+                />
+                <label htmlFor="yes">Ja</label>
+              </div>
+
+              <div className="flex-row">
+                <input
+                  className="radio-btn"
+                  type="radio"
+                  id="no"
+                  name="choose"
+                  value="no"
+                  onChange={radioHandler}
+                />
+                <label htmlFor="no">Nej</label>
+              </div>
             </div>
           </div>
           <div className="submit-container">
