@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Nav />
+      <Nav animals={animals} setAnimals={setAnimals}/>
       {/* <AnimalOverlay /> */}
       <Routes>
         <Route path="1" element={<AdoptionForm />} />
