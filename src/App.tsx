@@ -9,7 +9,7 @@ import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
-import AdoptionForm from "./Views/adoptionForm";
+import AdoptionForm from "./Views/Adoptionform";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
