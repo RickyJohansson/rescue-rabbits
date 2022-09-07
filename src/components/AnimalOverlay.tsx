@@ -1,11 +1,29 @@
 import './AnimalOverlay.scss';
 import CloseOverlayBtn from '../assets/close-overlay.svg';
 import VetLogo from '../assets/vet-logo.svg';
+import { useState } from 'react';
 
-function AnimalOverlay() {
+interface Props {
+    // animals: Animal[];
+    setHiddenCss:(hiddenCss: boolean) => void;
+    hiddenCss: boolean
+  }
+
+const AnimalOverlay = ({ setHiddenCss, hiddenCss }: Props) => {
+
+    let hiddenClass: string = hiddenCss ? ' hidden' : ''; 
+
+    // const handleCloseClick: () => void = () => setHiddenCss(hidden => !hidden);
+
+    function handleCloseClick() {
+        if (!hiddenCss) {
+            setHiddenCss(true);
+        } 
+    }
+
     return (
-        <section className="animal-overlay">
-            <a className='close-btn-wrapper' href=""><img className='close-btn' src={ CloseOverlayBtn } alt="" /></a>
+        <section className={ "animal-overlay" + hiddenClass }>
+            <a className='close-btn-wrapper' href=""><img className='close-btn' src={ CloseOverlayBtn } alt="" onClick={ () => handleCloseClick() } /></a>
             <h1>Charles</h1>
             <h2>Hund</h2>
             <img className='vet-logo' src={ VetLogo } alt="" />

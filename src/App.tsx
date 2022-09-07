@@ -13,15 +13,16 @@ import AdoptionForm from "./Views/Adoptionform";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
+  const [hiddenCss, setHiddenCss] = useState<boolean>(true);
 
   return (
     <div className="App">
       <Header />
       <Nav />
-      <AnimalOverlay />
+      {/* <AnimalOverlay /> */}
       <Routes>
         <Route path="1" element={<AdoptionForm />} />
-        <Route path="/" element={<Main animals={animals} />} />
+        <Route path="/" element={<Main animals={animals} setHiddenCss={setHiddenCss} hiddenCss={hiddenCss} />} />
       </Routes>
       <Location />
       <Footer />

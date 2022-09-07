@@ -14,11 +14,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
-<<<<<<< Updated upstream
-  display: flex;
-=======
-  display: block;
->>>>>>> Stashed changes
+  // KOM IHÅG ATT FIXA SCROLL-PROBLEMET
+}
+
+.hidden {
+  display: none;
 }
 
 .overlay-wrapper {
