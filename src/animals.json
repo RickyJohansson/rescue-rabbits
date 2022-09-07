@@ -2,7 +2,7 @@
   "animals": [
     {
       "name": "Nasse",
-      "animal": "Minigris",
+      "animal": "Minigrisar",
       "age": "2",
       "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptas cupiditate incidunt qui temporibus repudiandae nihil fugit facilis. Vel soluta exercitationem ea consequatur libero quia necessitatibus rem distinctio laboriosam accusantium!",
       "uploaded": "2022-09-01",
@@ -14,7 +14,7 @@
     },
     {
       "name": "Nalle",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "2",
       "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ratione dolores. Accusamus corporis nesciunt quaerat! Libero, nemo. Tenetur provident harum iusto, necessitatibus quas voluptas facere velit sit et. Excepturi, asperiores.",
       "uploaded": "2022-09-01",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Glenn",
-      "animal": "Hamster",
+      "animal": "Hamstrar",
       "age": "1",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet magni animi nisi unde optio quas delectus dignissimos, quod quam est ullam minima, consectetur perferendis aliquam sapiente! Sit, tenetur culpa.",
       "uploaded": "2022-09-01",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Doris",
-      "animal": "Markatta",
+      "animal": "Markattor",
       "age": "5",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ea quo harum eius tenetur vitae voluptatum consequuntur numquam laborum voluptatibus quis, at libero quaerat nostrum ipsa. Aperiam quidem soluta ad!",
       "uploaded": "2022-09-01",
@@ -50,7 +50,7 @@
     },
     {
       "name": "Boris",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "5",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
       "uploaded": "2022-09-01",
@@ -62,7 +62,7 @@
     },
     {
       "name": "Chip",
-      "animal": "Markatta",
+      "animal": "Markattor",
       "age": "2",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
       "uploaded": "2022-09-01",
@@ -74,7 +74,7 @@
     },
     {
       "name": "Ulf",
-      "animal": "Katt",
+      "animal": "Katter",
       "age": "11",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laboriosam corporis vitae aliquid esse dignissimos ducimus sit laudantium impedit odio nihil maiores atque tempore molestiae, architecto totam reiciendis unde id.",
       "uploaded": "2022-09-01",
@@ -86,7 +86,7 @@
     },
     {
       "name": "Ricky",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "4",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
       "uploaded": "2022-09-01",
@@ -98,7 +98,7 @@
     },
     {
       "name": "William",
-      "animal": "Markatta",
+      "animal": "Markattor",
       "age": "14",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis laborum, labore ad ipsa rem perspiciatis itaque amet tempora nam eum nostrum mollitia natus voluptate vitae harum deserunt nisi? Esse.",
       "uploaded": "2022-09-01",
@@ -110,7 +110,7 @@
     },
     {
       "name": "Hampus",
-      "animal": "Minigris",
+      "animal": "Minigrisar",
       "age": "5",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
       "uploaded": "2022-09-01",
@@ -122,7 +122,7 @@
     },
     {
       "name": "Rolf",
-      "animal": "Minigris",
+      "animal": "Minigrisar",
       "age": "9",
       "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi voluptas cupiditate incidunt qui temporibus repudiandae nihil fugit facilis. Vel soluta exercitationem ea consequatur libero quia necessitatibus rem distinctio laboriosam accusantium!",
       "uploaded": "2022-09-01",
@@ -134,7 +134,7 @@
     },
     {
       "name": "Åsa",
-      "animal": "Hamster",
+      "animal": "Hamstrar",
       "age": "1",
       "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, ratione dolores. Accusamus corporis nesciunt quaerat! Libero, nemo. Tenetur provident harum iusto, necessitatibus quas voluptas facere velit sit et. Excepturi, asperiores.",
       "uploaded": "2022-09-01",
@@ -146,7 +146,7 @@
     },
     {
       "name": "Felix",
-      "animal": "Katt",
+      "animal": "Katter",
       "age": "9",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum amet magni animi nisi unde optio quas delectus dignissimos, quod quam est ullam minima, consectetur perferendis aliquam sapiente! Sit, tenetur culpa.",
       "uploaded": "2022-09-01",
@@ -158,7 +158,7 @@
     },
     {
       "name": "Ida",
-      "animal": "Markatta",
+      "animal": "Markattor",
       "age": "18",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ea quo harum eius tenetur vitae voluptatum consequuntur numquam laborum voluptatibus quis, at libero quaerat nostrum ipsa. Aperiam quidem soluta ad!",
       "uploaded": "2022-09-01",
@@ -170,7 +170,7 @@
     },
     {
       "name": "Linus",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "6",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, asperiores. Ratione unde, eum numquam perspiciatis pariatur nemo consequuntur beatae placeat ipsum non dicta. Quia consectetur mollitia veniam consequuntur assumenda hic.",
       "uploaded": "2022-09-01",
@@ -182,7 +182,7 @@
     },
     {
       "name": "Tim",
-      "animal": "Hamster",
+      "animal": "Hamstrar",
       "age": "2",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
       "uploaded": "2022-09-01",
@@ -194,7 +194,7 @@
     },
     {
       "name": "Monica",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "2",
       "desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo laboriosam corporis vitae aliquid esse dignissimos ducimus sit laudantium impedit odio nihil maiores atque tempore molestiae, architecto totam reiciendis unde id.",
       "uploaded": "2022-09-01",
@@ -206,7 +206,7 @@
     },
     {
       "name": "Julia",
-      "animal": "Hund",
+      "animal": "Hundar",
       "age": "7",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis dolorum earum eligendi temporibus harum sequi voluptatum nisi aspernatur vitae voluptate non, aliquam, quas id ab velit soluta minima? Perspiciatis, beatae!",
       "uploaded": "2022-09-01",
@@ -218,7 +218,7 @@
     },
     {
       "name": "Pelle",
-      "animal": "Katt",
+      "animal": "Katter",
       "age": "9",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur officiis laborum, labore ad ipsa rem perspiciatis itaque amet tempora nam eum nostrum mollitia natus voluptate vitae harum deserunt nisi? Esse.",
       "uploaded": "2022-09-01",
@@ -230,7 +230,7 @@
     },
     {
       "name": "Christopher",
-      "animal": "Hamster",
+      "animal": "Hamstrar",
       "age": "3",
       "desc": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde perspiciatis, qui velit aperiam dignissimos exercitationem porro nulla, dicta, voluptatum ratione placeat dolorem adipisci reiciendis aliquid! Quam vero quaerat perferendis blanditiis.",
       "uploaded": "2022-09-01",
