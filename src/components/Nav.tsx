@@ -22,7 +22,7 @@ function Nav({setAnimals}: Props) {
     const showAllAnimals = () => {
 
         setAnimals(allAnimals);
-        
+
     }
 
 
@@ -31,11 +31,11 @@ function Nav({setAnimals}: Props) {
             <h1>NAVIGERING</h1>
             <ul>
                 <a onClick={showAllAnimals}>Alla Djur</a>
-                <a onClick={(e) => handleCategory(e)}>Hundar</a>
-                <a onClick={(e) => handleCategory(e)}>Katter</a>
-                <a onClick={(e) => handleCategory(e)}>Markattor</a>
-                <a onClick={(e) => handleCategory(e)}>Minigrisar</a>
-                <a onClick={(e) => handleCategory(e)}>Hamstrar</a>
+                <a onClick={(e) => handleCategory(e)}>Hund</a>
+                <a onClick={(e) => handleCategory(e)}>Katt</a>
+                <a onClick={(e) => handleCategory(e)}>Markatta</a>
+                <a onClick={(e) => handleCategory(e)}>Minigris</a>
+                <a onClick={(e) => handleCategory(e)}>Hamster</a>
             </ul>
         </nav>
     );
