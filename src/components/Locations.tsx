@@ -9,9 +9,8 @@ interface Props {
 function Locations({animals, setAnimals}: Props) {
 
   const handleLocation = (e: any) => {
-    let filteredLocations = animals.filter(location => location.animal === e.target.innerHTML)
+    let filteredLocations = animals.filter(location => location.location === e.target.innerHTML)
     setAnimals(filteredLocations);
-    console.log(e.target.innerHTML);
 }
 
   return (
