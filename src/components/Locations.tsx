@@ -5,10 +5,10 @@ function Locations() {
     <aside>
         <h1>HÄR FINNS VI</h1>
         <ul>
-          <li>Stockholm</li>
-          <li>Göteborg</li>
-          <li>Karlstad</li>
-          <li>Linköping</li>
+          <a>Stockholm</a>
+          <a>Göteborg</a>
+          <a>Karlstad</a>
+          <a>Linköping</a>
         </ul>
     </aside>
   );

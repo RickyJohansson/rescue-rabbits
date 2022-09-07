@@ -5,11 +5,11 @@ function Nav() {
         <nav>
             <h1>NAVIGERING</h1>
             <ul>
-            <li>Hundar</li>
-            <li>Katter</li>
-            <li>Markattor</li>
-            <li>Minigrisar</li>
-            <li>Hamstrar</li>
+                <a>Hundar</a>
+                <a>Katter</a>
+                <a>Markattor</a>
+                <a>Minigrisar</a>
+                <a>Hamstrar</a>
             </ul>
         </nav>
     );
