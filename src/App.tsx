@@ -35,7 +35,7 @@ function App() {
           }
         />
       </Routes>
-      <Location />
+      <Location animals={animals} setAnimals={setAnimals}/>
       <Footer />
     </div>
   );
