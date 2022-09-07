@@ -5,12 +5,32 @@ import { Animal } from "../models/animalInterface";
 
 interface Props {
   animals: Animal[];
+  setHiddenCss: (hiddenCss: boolean) => void;
+  hiddenCss: boolean;
+  setChosenAnimal: (chosenAnimal: Animal) => void;
+  chosenAnimal: Animal;
 }
 
-const CardGrid = ({ animals }: Props) => (
+// let animalCard = document.querySelector('.animalCard')
+// const target = event.target as animalCard
+
+const CardGrid = ({
+  animals,
+  hiddenCss,
+  setHiddenCss,
+  setChosenAnimal,
+  chosenAnimal,
+}: Props) => (
   <section className="cardsContainer">
     {animals.map((animal) => (
-      <Card key={animal.animalId} animal={animal} />
+      <Card
+        chosenAnimal={chosenAnimal}
+        setChosenAnimal={setChosenAnimal}
+        key={animal.animalId}
+        animal={animal}
+        hiddenCss={hiddenCss}
+        setHiddenCss={setHiddenCss}
+      />
     ))}
   </section>
 );

@@ -5,12 +5,27 @@ import Adopted from "../assets/adopterad.svg";
 
 interface Props {
   animal: Animal;
+  setHiddenCss: (hiddenCss: boolean) => void;
+  hiddenCss: boolean;
+  setChosenAnimal: (chosenAnimal: Animal) => void;
+  chosenAnimal: Animal;
 }
-const Card = ({ animal }: Props) => {
+
+const Card = ({
+  animal,
+  hiddenCss,
+  setHiddenCss,
+  setChosenAnimal,
+  chosenAnimal,
+}: Props) => {
+  function handleAnimalClick() {
+    setHiddenCss(!hiddenCss);
+    setChosenAnimal(animal);
+  }
   if (animal.adopted) {
     return (
       <>
-        <article className="animalCard">
+        <article onClick={() => handleAnimalClick()} className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
           <div>
@@ -26,7 +41,7 @@ const Card = ({ animal }: Props) => {
   } else {
     return (
       <>
-        <article className="animalCard">
+        <article onClick={handleAnimalClick} className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
         </article>

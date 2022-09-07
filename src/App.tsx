@@ -14,6 +14,7 @@ import AdoptionForm from "./Views/Adoptionform";
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
   const [hiddenCss, setHiddenCss] = useState<boolean>(true);
+  const [chosenAnimal, setChosenAnimal] = useState<Animal>(jsonData.animals[1]);
 
   return (
     <div className="App">
@@ -22,7 +23,18 @@ function App() {
       {/* <AnimalOverlay /> */}
       <Routes>
         <Route path="1" element={<AdoptionForm />} />
-        <Route path="/" element={<Main animals={animals} setHiddenCss={setHiddenCss} hiddenCss={hiddenCss} />} />
+        <Route
+          path="/"
+          element={
+            <Main
+              chosenAnimal={chosenAnimal}
+              setChosenAnimal={setChosenAnimal}
+              animals={animals}
+              setHiddenCss={setHiddenCss}
+              hiddenCss={hiddenCss}
+            />
+          }
+        />
       </Routes>
       <Location />
       <Footer />
