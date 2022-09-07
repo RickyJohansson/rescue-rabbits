@@ -4,7 +4,6 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Nav from "./components/Nav";
 import Location from "./components/Locations";
-import AnimalOverlay from "./components/AnimalOverlay";
 import Footer from "./components/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";

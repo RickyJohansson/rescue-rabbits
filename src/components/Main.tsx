@@ -60,21 +60,19 @@ const Main = ({
               />
             </a>
             <h1>{chosenAnimal.name}</h1>
-            <h2>{chosenAnimal.desc}</h2>
+            <h2>{chosenAnimal.animal}</h2>
             <img className="vet-logo" src={VetLogo} alt="" />
             <div className="overlay-wrapper">
               <div className="img-wrapper">
                 <img className="overlay-img" src={chosenAnimal.image} alt="" />
               </div>
               <div className="info-wrapper">
-                <p>Ålder: {chosenAnimal.age} år</p>
-                <p>Kön: {chosenAnimal.gender}</p>
-                <p>Finns i {chosenAnimal.location}</p>
-                <p>Djuret ankom till rescue rabbits {chosenAnimal.uploaded}</p>
-                <p>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking.
-                </p>
+                <p><span>Ålder:</span> {chosenAnimal.age} år</p>
+                <p><span>Kön:</span> {chosenAnimal.gender}</p>
+                <p><span>Finns i:</span> {chosenAnimal.location}</p>
+                <p><span>Djuret ankom till rescue rabbits:</span> {chosenAnimal.uploaded}</p>
+                <br />
+                <p>{chosenAnimal.desc}</p>
               </div>
             </div>
             <p className="link-text">
