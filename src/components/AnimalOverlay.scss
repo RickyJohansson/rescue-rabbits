@@ -14,7 +14,11 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 2em;
-    display: none;
+    // KOM IHÅG ATT FIXA SCROLL-PROBLEMET
+}
+
+.hidden {
+   display: none; 
 }
 
 .overlay-wrapper {
@@ -69,5 +73,12 @@ button {
     padding: 1.5em 2em;
     font-size: 20px;
     border-radius: 5px;
-}
 
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #13305d;
+    }
+}
