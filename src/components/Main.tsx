@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { Animal } from "../models/animalInterface";
 import CloseOverlayBtn from "../assets/close-overlay.svg";
 import VetLogo from "../assets/vet-logo.svg";
+import { useNavigate } from 'react-router-dom';
 
 interface Props {
   animals: Animal[];
@@ -21,11 +22,16 @@ const Main = ({
   chosenAnimal,
 }: Props) => {
   let hiddenClass: string = hiddenCss ? " hidden" : "";
+  const navigate = useNavigate();
   function handleCloseClick(e: any) {
     if (!hiddenCss) {
       setHiddenCss(true);
       e.preventDefault();
     }
+  }
+
+  const gotoAdoptionform = () => {
+    navigate('/1');
   }
 
   if (hiddenCss) {
@@ -79,7 +85,7 @@ const Main = ({
               Läs mer om {chosenAnimal.animal} och hur man sköter dem{" "}
               <a href="#">HÄR!</a>
             </p>
-            <button className="animal-btn">ANMÄL INTRESSE</button>
+            <button className="animal-btn" onClick={gotoAdoptionform}>ANMÄL INTRESSE</button>
           </section>
         </section>
       </>

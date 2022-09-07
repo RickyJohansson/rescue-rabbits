@@ -1,7 +1,15 @@
 import "./AdoptionForm.scss";
 import React from "react";
+import { useNavigate } from 'react-router-dom';
 
 const adoptionForm = () => {
+  
+  const navigate = useNavigate();
+
+  const gotoStart = () => {
+    navigate('/');
+  }
+
   return (
     <div className="adoptionContainer">
       <section>
@@ -46,7 +54,7 @@ const adoptionForm = () => {
               ></textarea>
             </div>
             <div>
-              <input className="submit" type="submit" value="Skicka"></input>
+              <input className="submit" type="submit" value="Skicka" onClick={gotoStart}></input>
             </div>
           </form>
         </div>
