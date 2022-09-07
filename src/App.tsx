@@ -21,7 +21,7 @@ function App() {
       <Nav setAnimals={setAnimals}/>
       {/* <AnimalOverlay /> */}
       <Routes>
-        <Route path="1" element={<AdoptionForm />} />
+        <Route path="1" element={<AdoptionForm setHiddenCss={setHiddenCss}/>} />
         <Route
           path="/"
           element={

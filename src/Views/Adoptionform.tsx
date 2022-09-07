@@ -2,11 +2,16 @@ import "./AdoptionForm.scss";
 import React from "react";
 import { useNavigate } from 'react-router-dom';
 
-const adoptionForm = () => {
+interface Props {
+  setHiddenCss: (hiddenCss: boolean) => void;
+}
+
+const adoptionForm = ({setHiddenCss}: Props) => {
   
   const navigate = useNavigate();
 
   const gotoStart = () => {
+    setHiddenCss(true);
     navigate('/');
   }
 
