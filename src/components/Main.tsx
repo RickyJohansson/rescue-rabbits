@@ -1,6 +1,6 @@
 import "./Main.scss";
 import Cards from "./Cards";
-import React, { useState } from "react";
+import { useEffect } from "react";
 import { Animal } from "../models/animalInterface";
 import CloseOverlayBtn from "../assets/close-overlay.svg";
 import VetLogo from "../assets/vet-logo.svg";
@@ -12,6 +12,8 @@ interface Props {
   hiddenCss: boolean;
   setChosenAnimal: (chosenAnimal: Animal) => void;
   chosenAnimal: Animal;
+  adoptedCss: boolean;
+  setAdoptedCss: (adoptedCss: boolean) => void;
 }
 
 const Main = ({
@@ -20,6 +22,8 @@ const Main = ({
   hiddenCss,
   setChosenAnimal,
   chosenAnimal,
+  adoptedCss,
+  setAdoptedCss
 }: Props) => {
   let hiddenClass: string = hiddenCss ? " hidden" : "";
   const navigate = useNavigate();
@@ -31,12 +35,31 @@ const Main = ({
   }
 
   const gotoAdoptionform = () => {
-    navigate('/1');
+    if (!chosenAnimal.adopted) {
+      navigate('/1');
+    }
+    
   }
 
+  let adoptedText: string = '';
+  let adoptedBtn: string = adoptedCss ? " adopted-btn" : "";
+
+  useEffect(() => {
+    if (chosenAnimal.adopted) {
+      setAdoptedCss(true);
+    } else {
+      setAdoptedCss(false);
+    }
+  },[hiddenCss]);
+
+  if (chosenAnimal.adopted) {
+    adoptedText = 'OBS! Detta djuret är redan adopterat och går inte att anmäla intresse på.';
+  } else {
+    adoptedText = '';
+  }
+  
   if (hiddenCss) {
     return (
-      <>
         <section className="IntroContainer">
           <div className="cardsContainer">
             <Cards
@@ -48,7 +71,6 @@ const Main = ({
             />
           </div>
         </section>
-      </>
     );
   } else {
     return (
@@ -79,13 +101,14 @@ const Main = ({
                 <p><span>Djuret ankom till rescue rabbits:</span> {chosenAnimal.uploaded}</p>
                 <br />
                 <p>{chosenAnimal.desc}</p>
+                <p className="adopted-text">{adoptedText}</p>
               </div>
             </div>
             <p className="link-text">
               Läs mer om {chosenAnimal.animal} och hur man sköter dem{" "}
               <a href="#">HÄR!</a>
             </p>
-            <button className="animal-btn" onClick={gotoAdoptionform}>ANMÄL INTRESSE</button>
+            <button className={"animal-btn" + adoptedBtn} onClick={gotoAdoptionform}>ANMÄL INTRESSE</button>
           </section>
         </section>
       </>

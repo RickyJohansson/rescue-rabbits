@@ -15,9 +15,11 @@ function App() {
   const [hiddenCss, setHiddenCss] = useState<boolean>(true);
   const [chosenAnimal, setChosenAnimal] = useState<Animal>(jsonData.animals[1]);
   const [formView, setFormView] = useState<boolean>(true);
+  const [adoptedCss, setAdoptedCss] = useState<boolean>(false);
+  
   return (
     <div className="App">
-      <Header />
+      <Header setAnimals={setAnimals} />
       <Nav setAnimals={setAnimals} />
       {/* <AnimalOverlay /> */}
       <Routes>
@@ -40,6 +42,8 @@ function App() {
               animals={animals}
               setHiddenCss={setHiddenCss}
               hiddenCss={hiddenCss}
+              adoptedCss={adoptedCss}
+              setAdoptedCss={setAdoptedCss}
             />
           }
         />

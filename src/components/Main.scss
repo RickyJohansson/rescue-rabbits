@@ -6,6 +6,8 @@ main {
   background-color: #f5f5f5;
 }
 
+//PARTIAL
+
 .animal-overlay {
   position: absolute;
   background-color: white;
@@ -119,4 +121,21 @@ button {
     background-color: #14315d;
     color: grey;
   }
+}
+
+.adopted-btn {
+  background-color: grey;
+  
+  &:hover {
+    cursor: auto;
+  }
+
+  &:active {
+    background-color: grey;
+    color: white;
+  }
+}
+
+.adopted-text {
+  color: red;
 }

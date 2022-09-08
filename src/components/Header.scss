@@ -33,11 +33,11 @@ header .search-btn {
   font-size: 36px;
 }
 
-form {
+section {
   display: flex;
 }
 
-header form input {
+header section input {
   height: 2em;
   font-size: 18px;
   outline: none;
@@ -48,10 +48,10 @@ header form input {
   border: none;
 }
 
-header form a:hover {
+header section a:hover {
   cursor: pointer;
 }
 
-header form .search-btn {
+header section .search-btn {
   width: 35px;
 }
