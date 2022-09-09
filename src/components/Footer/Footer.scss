@@ -45,16 +45,16 @@ footer a {
   footer .socialWrapper {
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   footer .logoWrapper {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   footer .footer__adress {
     display: none;
   }
 }
-
-

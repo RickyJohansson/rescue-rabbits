@@ -152,3 +152,45 @@
   align-items: center;
   flex-direction: column;
 }
+
+@media screen and (max-width: 900px) {
+  .adoptionContainer {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    border: none;
+    p {
+      color: black;
+      padding: 2rem;
+      font-size: 24px;
+      line-height: 42px;
+      text-align: left;
+      margin-top: none;
+    }
+    h1 {
+      line-height: 42px;
+      margin-bottom: 0;
+    }
+  }
+
+  .container form {
+    padding: 0rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .submit-container {
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .post-submit-container {
+    line-height: 42px;
+    h1 {
+      padding: 1rem;
+    }
+    button {
+      width: 50%;
+    }
+  }
+}

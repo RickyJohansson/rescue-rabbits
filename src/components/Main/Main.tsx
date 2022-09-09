@@ -77,6 +77,7 @@ const Main = ({
     return (
       <>
         <section className="IntroContainer">
+          <div className="fillContainer"></div>
           <section className={"animal-overlay" + hiddenClass}>
             <a className="close-btn-wrapper" href="">
               <img
@@ -86,9 +87,15 @@ const Main = ({
                 onClick={(e) => handleCloseClick(e)}
               />
             </a>
-            <h1>{chosenAnimal.name}</h1>
-            <h2>{chosenAnimal.animal}</h2>
-            <img className="vet-logo" src={VetLogo} alt="" />
+            <div className="header-wrapper">
+              <div className="header-vet-container">
+                <img className="vet-logo" src={VetLogo} alt="" />
+              </div>
+              <div className="header-text-container">
+                <h1>{chosenAnimal.name}</h1>
+                <h2>{chosenAnimal.animal}</h2>
+              </div>
+            </div>
             <div className="overlay-wrapper">
               <div className="img-wrapper">
                 <img className="overlay-img" src={chosenAnimal.image} alt="" />

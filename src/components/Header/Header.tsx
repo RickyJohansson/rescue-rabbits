@@ -4,8 +4,8 @@ import Logo from "../../assets/logo.svg";
 import Search_Btn from "../../assets/search-btn.svg";
 import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
+import burgerMenu from "../../assets/menu.svg";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
@@ -18,7 +18,7 @@ function Header({ setAnimals }: Props) {
   const navigate = useNavigate();
 
   function navigateHome() {
-    navigate('/');
+    navigate("/");
   }
 
   function getInputValue(event: any) {
@@ -59,7 +59,10 @@ function Header({ setAnimals }: Props) {
   return (
     <header>
       <section className="header__title">
-        <a onClick={ navigateHome } ><img className="logo" src={Logo} alt="" /></a>
+        <img className="burgerMenu" src={burgerMenu} alt="" />
+        <a onClick={navigateHome}>
+          <img className="logo" src={Logo} alt="" />
+        </a>
         <h1>Rescue Rabbits</h1>
       </section>
       <section>

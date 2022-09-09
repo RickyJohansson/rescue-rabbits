@@ -52,8 +52,11 @@ header section .search-btn {
   width: 35px;
 }
 
-@media screen and (max-width: 900px) {
+.burgerMenu {
+  display: none;
+}
 
+@media screen and (max-width: 900px) {
   header {
     height: 5rem;
   }
@@ -68,5 +71,14 @@ header section .search-btn {
 
   header .header__title {
     width: 100%;
+  }
+
+  header input {
+    width: 7rem;
+  }
+  .burgerMenu {
+    display: flex;
+    height: 48px;
+    width: 48px;
   }
 }

@@ -29,8 +29,7 @@ main {
   justify-content: space-between;
   padding: 2em;
 }
-  // KOM IHÅG ATT FIXA SCROLL-PROBLEMET
-
+// KOM IHÅG ATT FIXA SCROLL-PROBLEMET
 
 .hidden {
   display: none;
@@ -44,6 +43,10 @@ main {
 
 .IntroContainer {
   min-height: 100vh;
+}
+
+.fillContainer {
+  min-height: 150vh;
 }
 
 .animal-overlay h1,
@@ -68,7 +71,6 @@ main {
 
 .vet-logo {
   width: 90px;
-  position: absolute;
 }
 
 .animal-overlay h2 {
@@ -140,18 +142,43 @@ button {
   color: red;
 }
 
+.header-wrapper {
+  width: 50%;
+  padding: 1rem;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.header-vet-container {
+  align-items: flex-end;
+}
+
 @media screen and (max-width: 900px) {
   .animal-overlay {
     top: 30em;
   }
 
-  .animal-overlay .overlay-wrapper  {
+  .animal-overlay .overlay-wrapper {
     flex-direction: column;
   }
 
-
-  .animal-overlay .overlay-wrapper  {
+  .animal-overlay .overlay-wrapper {
     flex-direction: column;
+  }
+  .animal-overlay .overlay-img {
+    aspect-ratio: 1;
+    max-width: 14rem;
+    max-height: 14rem;
+  }
+
+  button {
+    width: 100%;
   }
 }
-

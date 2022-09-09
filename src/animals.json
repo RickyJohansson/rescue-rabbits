@@ -198,11 +198,11 @@
     {
       "name": "Tim",
       "animal": "Hamster",
-      "age": "2",
+      "age": "32",
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et, aspernatur facilis autem nemo repellendus nam ea accusamus dignissimos debitis officia officiis atque sint voluptatibus inventore dicta alias eos, optio animi.",
       "uploaded": "2022-09-01",
       "location": "Linköping",
-      "image": "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/905909-Center-1",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/40/Naked_mole_rat.jpg",
       "gender": "Hane",
       "adopted": true,
       "keyWords": ["söt", "aggresiv", "jobbig", "2smart4u"],
