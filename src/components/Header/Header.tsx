@@ -1,8 +1,16 @@
 import "./Header.scss";
+<<<<<<< Updated upstream:src/components/Header/Header.tsx
 import Logo from "../../assets/logo.svg";
 import Search_Btn from "../../assets/search-btn.svg";
 import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
+=======
+import Logo from "../assets/logo.svg";
+import Search_Btn from "../assets/search-btn.svg";
+import { Animal } from "../models/animalInterface";
+import jsonData from "../animals.json";
+import { useNavigate } from 'react-router-dom';
+>>>>>>> Stashed changes:src/components/Header.tsx
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
@@ -11,6 +19,12 @@ interface Props {
 function Header({ setAnimals }: Props) {
   let allAnimals = jsonData.animals;
   let query = "".toLowerCase();
+
+  const navigate = useNavigate();
+
+  function navigateHome() {
+    navigate('/');
+  }
 
   function getInputValue(event: any) {
     query = event.target.value;
@@ -50,7 +64,7 @@ function Header({ setAnimals }: Props) {
   return (
     <header>
       <section>
-        <img className="logo" src={Logo} alt="" />
+        <a onClick={ navigateHome } ><img className="logo" src={Logo} alt="" /></a>
         <h1>Rescue Rabbits</h1>
       </section>
       <section>

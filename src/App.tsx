@@ -17,6 +17,25 @@ function App() {
   const [formView, setFormView] = useState<boolean>(true);
   const [adoptedCss, setAdoptedCss] = useState<boolean>(false);
 
+<<<<<<< Updated upstream
+=======
+  // FRÅGOR ATT STÄLLA TILL DAVID:
+
+  // "Detta behöver sparas i något state. Om det behövs visas någonstans vem som gjort bokningen, det väljer ni själva."
+  // Vi visar en overlay med "tack för visat intresse" men har inte kopplat någon state till det
+
+  //TODO
+
+  // I LISTAN(????) ska det minst visas:
+  // Plats
+  // Ålder
+  // Uppläggningsdatum
+  // Vi visar bara namn + bild i "listan"
+
+
+
+  
+>>>>>>> Stashed changes
   return (
     <div className="App">
       <Header setAnimals={setAnimals} />

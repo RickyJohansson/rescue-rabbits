@@ -76,8 +76,6 @@ const Main = ({
     return (
       <>
         <section className="IntroContainer">
-          <div className="fillContainer"></div>
-
           <section className={"animal-overlay" + hiddenClass}>
             <a className="close-btn-wrapper" href="">
               <img
