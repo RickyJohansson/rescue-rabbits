@@ -11,20 +11,20 @@ interface Props {
 function Header({setAnimals}: Props) {
 
     let allAnimals = jsonData.animals;
-    let query = '';
+    let query = ''.toLowerCase();
 
     function getInputValue(event: any) {
         query = event.target.value;
         const filteredAnimals = [...allAnimals];
         if (event.keyCode == 13 ) {
             let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
-                if (animal.animal === query) {
+                if (animal.animal.toLowerCase() === query) {
                     return animal.animal
                 }
-                else if (animal.location === query) {
+                else if (animal.location.toLowerCase() === query) {
                     return animal.location
                 }
-                else if (animal.name === query) {
+                else if (animal.name.toLowerCase() === query) {
                     return animal.name
                 }
             });
@@ -36,13 +36,13 @@ function Header({setAnimals}: Props) {
 
         const filteredAnimals = [...allAnimals];
         let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
-            if (animal.animal === query) {
+            if (animal.animal.toLowerCase() === query) {
                 return animal.animal
             }
-            else if (animal.location === query) {
+            else if (animal.location.toLowerCase() === query) {
                 return animal.location
             }
-            else if (animal.name === query) {
+            else if (animal.name.toLowerCase() === query) {
                 return animal.name
             }
         });

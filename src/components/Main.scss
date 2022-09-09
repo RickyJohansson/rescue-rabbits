@@ -13,8 +13,8 @@ main {
   background-color: white;
   z-index: 4;
   margin: auto;
-  width: 80%;
-  height: 80%;
+  width: 60%;
+  height: fit-content;
   left: 0;
   right: 0;
   top: 0;
@@ -139,3 +139,13 @@ button {
 .adopted-text {
   color: red;
 }
+
+// @media screen and (max-width: 900px) {
+//   .animal-overlay {
+//     top: 30em;
+//   }
+
+//   .animal-overlay .overlay-wrapper  {
+//     flex-direction: column;
+//   }
+// }
