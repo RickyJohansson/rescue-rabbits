@@ -14,31 +14,41 @@ function Header({setAnimals}: Props) {
     let query = '';
 
     function getInputValue(event: any) {
-        console.log(event.target.value);
         query = event.target.value;
-        if (event.keyCode == 13) {
-            handleSearchQuery(query);
+        const filteredAnimals = [...allAnimals];
+        if (event.keyCode == 13 ) {
+            let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
+                if (animal.animal === query) {
+                    return animal.animal
+                }
+                else if (animal.location === query) {
+                    return animal.location
+                }
+                else if (animal.name === query) {
+                    return animal.name
+                }
+            });
+            setAnimals(newFilteredAnimals);
         }  
     }
 
-    // TODO: lägg in && på rad 19 och animal.location/name, etc
-    //if...else if
-    // och sen var det väl att flytta över rad 29+30 + 35 va?
-    // så har vi allt i en och samma funktion
-    //Japp .. ok, men då har vi väl den info som behövs nu..? resten kommer vi ihg till imon!
-    // Minns fan inte vad vi gjorde tidigare idag. =P
+    function handleSearchButton() {
 
-
-    function handleSearchQuery(event: any) {
         const filteredAnimals = [...allAnimals];
-        let newFilteredAnimals = filteredAnimals.filter(animal => animal.animal === query);
-        // let newFilteredNames = filteredAnimals.filter(animal => animal.name === query);
-        // let newFilteredLocations = filteredAnimals.filter(animal => animal.location === query);
-        console.log(newFilteredAnimals);
-        
-        setAnimals(newFilteredAnimals);  
-         
+        let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
+            if (animal.animal === query) {
+                return animal.animal
+            }
+            else if (animal.location === query) {
+                return animal.location
+            }
+            else if (animal.name === query) {
+                return animal.name
+            }
+        });
+        setAnimals(newFilteredAnimals);
     }
+
 
     return (
         <header>
@@ -49,7 +59,7 @@ function Header({setAnimals}: Props) {
         <section>
             <input onKeyUp={ getInputValue } type="text" placeholder="SÖK" />
             <a>
-            <img onClick={ handleSearchQuery } className="search-btn" src={ Search_Btn } alt="" />
+            <img onClick={ handleSearchButton } className="search-btn" src={ Search_Btn } alt="" />
             </a>
         </section>
         </header>
