@@ -19,19 +19,23 @@ function Footer() {
         <p>663 78 Djurbo</p>
       </section>
       <section className="footer__social">
-        <p>Social media</p>
-        <a href="#">
-          <img src={TwitterLogo} alt="" />
-        </a>
-        <a href="#">
-          <img src={FacebookLogo} alt="" />
-        </a>
-        <a href="#">
-          <img src={LinkedinLogo} alt="" />
-        </a>
-        <a href="#">
-          <img src={InstagramLogo} alt="" />
-        </a>
+        <div className="socialWrapper">
+          <p>Social media</p>
+        </div>
+        <div className="logoWrapper">
+          <a href="#">
+            <img src={TwitterLogo} alt="" />
+          </a>
+          <a href="#">
+            <img src={FacebookLogo} alt="" />
+          </a>
+          <a href="#">
+            <img src={LinkedinLogo} alt="" />
+          </a>
+          <a href="#">
+            <img src={InstagramLogo} alt="" />
+          </a>
+        </div>
       </section>
     </footer>
   );

@@ -58,7 +58,7 @@ function Header({ setAnimals }: Props) {
 
   return (
     <header>
-      <section>
+      <section className="header__title">
         <a onClick={ navigateHome } ><img className="logo" src={Logo} alt="" /></a>
         <h1>Rescue Rabbits</h1>
       </section>

@@ -31,3 +31,30 @@ footer a {
   text-align: center;
   font-size: 16px;
 }
+
+@media screen and (max-width: 900px) {
+  footer {
+    display: flex;
+    align-content: space-evenly;
+  }
+  footer .footer__social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  footer .socialWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .logoWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .footer__adress {
+    display: none;
+  }
+}
+
+
