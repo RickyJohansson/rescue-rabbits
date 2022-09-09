@@ -1,0 +1,37 @@
+nav {
+  grid-area: nav;
+  position: sticky;
+  left: 0;
+  bottom: 50;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+nav h1 {
+  margin-top: 5rem;
+  position: fixed;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  position: fixed;
+}
+
+nav a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  padding: 0;
+}
+
+nav ul a:hover {
+  cursor: pointer;
+}

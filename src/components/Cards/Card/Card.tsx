@@ -1,7 +1,7 @@
 import "./Card.scss";
-import { Animal } from "../models/animalInterface";
+import { Animal } from "../../../models/animalInterface";
 import React from "react";
-import Adopted from "../assets/adopterad.svg";
+import Adopted from "../../../assets/adopterad.svg";
 
 interface Props {
   animal: Animal;
@@ -28,6 +28,9 @@ const Card = ({
         <article onClick={() => handleAnimalClick()} className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
+          <p>Uppladdat: {animal.uploaded}</p>
+          <p>{animal.age} år.</p>
+          <p>Finns i {animal.location}.</p>
           <div>
             <img
               className="adoptedTag"
@@ -44,6 +47,9 @@ const Card = ({
         <article onClick={handleAnimalClick} className="animalCard">
           <h1>{animal.name}</h1>
           <img src={animal.image} alt="bild" />
+          <p>Uppladdat: {animal.uploaded}</p>
+          <p>{animal.age} år.</p>
+          <p>Finns i {animal.location}.</p>
         </article>
       </>
     );

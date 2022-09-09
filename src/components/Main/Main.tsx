@@ -1,10 +1,10 @@
 import "./Main.scss";
-import Cards from "./Cards";
+import Cards from "../Cards/Cards";
 import { useEffect } from "react";
-import { Animal } from "../models/animalInterface";
-import CloseOverlayBtn from "../assets/close-overlay.svg";
-import VetLogo from "../assets/vet-logo.svg";
-import { useNavigate } from 'react-router-dom';
+import { Animal } from "../../models/animalInterface";
+import CloseOverlayBtn from "../../assets/close-overlay.svg";
+import VetLogo from "../../assets/vet-logo.svg";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   animals: Animal[];
@@ -23,7 +23,7 @@ const Main = ({
   setChosenAnimal,
   chosenAnimal,
   adoptedCss,
-  setAdoptedCss
+  setAdoptedCss,
 }: Props) => {
   let hiddenClass: string = hiddenCss ? " hidden" : "";
   const navigate = useNavigate();
@@ -36,12 +36,11 @@ const Main = ({
 
   const gotoAdoptionform = () => {
     if (!chosenAnimal.adopted) {
-      navigate('/1');
+      navigate("/1");
     }
-    
-  }
+  };
 
-  let adoptedText: string = '';
+  let adoptedText: string = "";
   let adoptedBtn: string = adoptedCss ? " adopted-btn" : "";
 
   useEffect(() => {
@@ -50,27 +49,28 @@ const Main = ({
     } else {
       setAdoptedCss(false);
     }
-  },[hiddenCss]);
+  }, [hiddenCss]);
 
   if (chosenAnimal.adopted) {
-    adoptedText = 'OBS! Detta djuret är redan adopterat och går inte att anmäla intresse på.';
+    adoptedText =
+      "OBS! Detta djuret är redan adopterat och går inte att anmäla intresse på.";
   } else {
-    adoptedText = '';
+    adoptedText = "";
   }
-  
+
   if (hiddenCss) {
     return (
-        <section className="IntroContainer">
-          <div className="cardsContainer">
-            <Cards
-              chosenAnimal={chosenAnimal}
-              setChosenAnimal={setChosenAnimal}
-              setHiddenCss={setHiddenCss}
-              hiddenCss={hiddenCss}
-              animals={animals}
-            />
-          </div>
-        </section>
+      <section className="IntroContainer">
+        <div className="cardsContainer">
+          <Cards
+            chosenAnimal={chosenAnimal}
+            setChosenAnimal={setChosenAnimal}
+            setHiddenCss={setHiddenCss}
+            hiddenCss={hiddenCss}
+            animals={animals}
+          />
+        </div>
+      </section>
     );
   } else {
     return (
@@ -95,10 +95,19 @@ const Main = ({
                 <img className="overlay-img" src={chosenAnimal.image} alt="" />
               </div>
               <div className="info-wrapper">
-                <p><span>Ålder:</span> {chosenAnimal.age} år</p>
-                <p><span>Kön:</span> {chosenAnimal.gender}</p>
-                <p><span>Finns i:</span> {chosenAnimal.location}</p>
-                <p><span>Djuret ankom till rescue rabbits:</span> {chosenAnimal.uploaded}</p>
+                <p>
+                  <span>Ålder:</span> {chosenAnimal.age} år
+                </p>
+                <p>
+                  <span>Kön:</span> {chosenAnimal.gender}
+                </p>
+                <p>
+                  <span>Finns i:</span> {chosenAnimal.location}
+                </p>
+                <p>
+                  <span>Djuret ankom till rescue rabbits:</span>{" "}
+                  {chosenAnimal.uploaded}
+                </p>
                 <br />
                 <p>{chosenAnimal.desc}</p>
                 <p className="adopted-text">{adoptedText}</p>
@@ -108,7 +117,12 @@ const Main = ({
               Läs mer om {chosenAnimal.animal} och hur man sköter dem{" "}
               <a href="#">HÄR!</a>
             </p>
-            <button className={"animal-btn" + adoptedBtn} onClick={gotoAdoptionform}>ANMÄL INTRESSE</button>
+            <button
+              className={"animal-btn" + adoptedBtn}
+              onClick={gotoAdoptionform}
+            >
+              ANMÄL INTRESSE
+            </button>
           </section>
         </section>
       </>

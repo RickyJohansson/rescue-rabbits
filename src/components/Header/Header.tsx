@@ -1,8 +1,8 @@
 import "./Header.scss";
-import Logo from "../assets/logo.svg";
-import Search_Btn from "../assets/search-btn.svg";
-import { Animal } from "../models/animalInterface";
-import jsonData from "../animals.json";
+import Logo from "../../assets/logo.svg";
+import Search_Btn from "../../assets/search-btn.svg";
+import { Animal } from "../../models/animalInterface";
+import jsonData from "../../animals.json";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;

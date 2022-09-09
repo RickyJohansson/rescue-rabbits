@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import Nav from "./components/Nav";
-import Location from "./components/Locations";
-import Footer from "./components/Footer";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Nav from "./components/Nav/Nav";
+import Location from "./components/Locations/Locations";
+import Footer from "./components/Footer/Footer";
 import jsonData from "./animals.json";
 import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
