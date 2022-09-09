@@ -16,7 +16,7 @@ function App() {
   const [chosenAnimal, setChosenAnimal] = useState<Animal>(jsonData.animals[1]);
   const [formView, setFormView] = useState<boolean>(true);
   const [adoptedCss, setAdoptedCss] = useState<boolean>(false);
-  
+
   return (
     <div className="App">
       <Header setAnimals={setAnimals} />
