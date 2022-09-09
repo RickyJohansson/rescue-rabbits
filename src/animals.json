@@ -10,6 +10,7 @@
       "image": "https://images.unsplash.com/photo-1652288748605-3bba47b553e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=911&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "gris"],
       "animalId": 1
     },
     {
@@ -22,6 +23,7 @@
       "image": "https://images.unsplash.com/photo-1546644719-338fa016d442?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund"],
       "animalId": 2
     },
     {
@@ -34,6 +36,7 @@
       "image": "https://petapixel.com/assets/uploads/2022/04/wild-hamster-photo-by-julian-rad-1-800x519.jpg",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hamster", "hamsterpaj"],
       "animalId": 3
     },
     {
@@ -46,6 +49,7 @@
       "image": "https://www.aveleyman.com/Gallery/2018/11/195480-33929-0.jpg",
       "gender": "Hona",
       "adopted": false,
+      "keyWords": ["söt", "apa", "markatta"],
       "animalId": 4
     },
     {
@@ -58,6 +62,7 @@
       "image": "https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=932&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund"],
       "animalId": 5
     },
     {
@@ -70,6 +75,7 @@
       "image": "https://img.fotocommunity.com/herr-nilsson-280036ae-ffd1-45d8-b7d2-1366e5b7cb54.jpg?height=1000",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "apa", "markatta"],
       "animalId": 6
     },
     {
@@ -82,6 +88,7 @@
       "image": "https://images.unsplash.com/photo-1597626133663-53df9633b799?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "katt", "kisse"],
       "animalId": 7
     },
     {
@@ -94,6 +101,7 @@
       "image": "https://images.unsplash.com/photo-1600369671608-7aad7dac5236?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund", "vovve"],
       "animalId": 8
     },
     {
@@ -106,6 +114,7 @@
       "image": "https://static.cdn-expressen.se/images/ac/96/ac966636ce0347b99aca4da5247ca74e/16x9/600.jpg",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "apa", "markatta"],
       "animalId": 9
     },
     {
@@ -118,6 +127,7 @@
       "image": "https://images.unsplash.com/photo-1630173209442-83f4e940b66b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "gris", "minigris"],
       "animalId": 10
     },
     {
@@ -130,6 +140,7 @@
       "image": "https://gotlandsdjurpark.se/wp-content/uploads/2018/04/DSC_9376.jpg",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "gris", "minigris"],
       "animalId": 11
     },
     {
@@ -142,6 +153,7 @@
       "image": "https://img.pixers.pics/pho_wat(s3:700/FO/18/90/81/44/700_FO18908144_8a5fed5e476a5476f112ce25f2b8696b.jpg,700,629,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,579,jpg)/posters-hamster-isolerat-pa-vit.jpg.jpg",
       "gender": "Hona",
       "adopted": false,
+      "keyWords": ["söt", "hamster"],
       "animalId": 12
     },
     {
@@ -154,6 +166,7 @@
       "image": "https://images.unsplash.com/photo-1559321966-04643588828f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund", "hundar", "vovve"],
       "animalId": 13
     },
     {
@@ -166,6 +179,7 @@
       "image": "https://mz-prod.s3.amazonaws.com/uploads/photo/file/264699/large_677e99981fdb1ea3195901ebba5934d8-nilsson_.jpg",
       "gender": "Hona",
       "adopted": false,
+      "keyWords": ["söt", "markatta", "apa"],
       "animalId": 14
     },
     {
@@ -178,6 +192,7 @@
       "image": "https://images.unsplash.com/photo-1571066470962-f10fcf2fdf9e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund", "vovve", "jakthund"],
       "animalId": 15
     },
     {
@@ -190,6 +205,7 @@
       "image": "https://assets.petco.com/petco/image/upload/c_pad,dpr_1.0,f_auto,q_auto,h_636,w_636/c_pad,h_636,w_636/905909-Center-1",
       "gender": "Hane",
       "adopted": true,
+      "keyWords": ["söt", "aggresiv", "jobbig", "2smart4u"],
       "animalId": 16
     },
     {
@@ -202,6 +218,7 @@
       "image": "https://images.unsplash.com/photo-1586263374340-75d101b05f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=832&q=80",
       "gender": "Hona",
       "adopted": false,
+      "keyWords": ["söt", "hund", "vovve", "jakthund"],
       "animalId": 17
     },
     {
@@ -214,6 +231,7 @@
       "image": "https://images.unsplash.com/photo-1596957901846-a0722f546502?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=859&q=80",
       "gender": "Hona",
       "adopted": false,
+      "keyWords": ["söt", "hund"],
       "animalId": 18
     },
     {
@@ -226,6 +244,7 @@
       "image": "https://images.unsplash.com/photo-1606041971133-7fedafcab553?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80",
       "gender": "Hane",
       "adopted": true,
+      "keyWords": ["söt", "hund"],
       "animalId": 19
     },
     {
@@ -238,6 +257,7 @@
       "image": "https://static.independent.co.uk/2022/06/17/12/newFile-2.jpg?quality=75&width=982&height=726&auto=webp",
       "gender": "Hane",
       "adopted": false,
+      "keyWords": ["söt", "hund"],
       "animalId": 20
     }
   ]

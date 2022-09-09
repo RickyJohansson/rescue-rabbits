@@ -8,6 +8,7 @@ export interface Animal {
   image: string;
   gender: string;
   adopted: boolean;
+  keyWords: Array<string>;
   animalId: number;
 }
 [];
