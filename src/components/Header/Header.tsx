@@ -1,16 +1,11 @@
 import "./Header.scss";
-<<<<<<< Updated upstream:src/components/Header/Header.tsx
+
 import Logo from "../../assets/logo.svg";
 import Search_Btn from "../../assets/search-btn.svg";
 import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
-=======
-import Logo from "../assets/logo.svg";
-import Search_Btn from "../assets/search-btn.svg";
-import { Animal } from "../models/animalInterface";
-import jsonData from "../animals.json";
 import { useNavigate } from 'react-router-dom';
->>>>>>> Stashed changes:src/components/Header.tsx
+
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;

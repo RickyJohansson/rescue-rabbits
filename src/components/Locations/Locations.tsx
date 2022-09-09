@@ -18,7 +18,7 @@ function Locations({ setAnimals }: Props) {
   };
 
   return (
-    <aside>
+    <aside className="hidden-sidebar">
       <h1>HÄR FINNS VI</h1>
       <ul>
         <a onClick={(e) => handleLocation(e)}>Stockholm</a>

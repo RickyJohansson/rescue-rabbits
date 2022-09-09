@@ -35,3 +35,10 @@ nav a {
 nav ul a:hover {
   cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  
+  .hidden-sidebar {
+    display: none;
+  }
+}

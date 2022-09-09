@@ -25,3 +25,14 @@ h1, h2 {
   grid-template-columns: 12.5rem 1fr 12.5rem;
   grid-template-rows: auto 1fr auto;
 }
+
+@media screen and (max-width: 900px) {
+  .App {
+    grid-template-columns: 100%;
+
+    grid-template-areas: 
+    "header"
+    "content"
+    "footer";
+  }
+}

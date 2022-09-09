@@ -145,14 +145,13 @@ button {
     top: 30em;
   }
 
-<<<<<<< Updated upstream:src/components/Main/Main.scss
-//   .animal-overlay .overlay-wrapper  {
-//     flex-direction: column;
-//   }
-// }
-=======
+  .animal-overlay .overlay-wrapper  {
+    flex-direction: column;
+  }
+
+
   .animal-overlay .overlay-wrapper  {
     flex-direction: column;
   }
 }
->>>>>>> Stashed changes:src/components/Main.scss
+
