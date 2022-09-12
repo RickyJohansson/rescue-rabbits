@@ -30,11 +30,7 @@ function Header({ setAnimals }: Props) {
     }
   }
 
-  const handleSearchButton: () => void = () => {
-    sortSearch(query);
-  }
-
-  const sortSearch = (query: string) => {
+  const sortSearch: (query: string) => void = (query: string) => {
     const filteredAnimals: Array<Animal> = [...allAnimals];
     let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
       if (animal.animal.toLowerCase() === query) {
@@ -64,7 +60,7 @@ function Header({ setAnimals }: Props) {
         <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />
         <a>
           <img
-            onClick={handleSearchButton}
+            onClick={() => sortSearch(query)}
             className="search-btn"
             src={Search_Btn}
             alt=""
