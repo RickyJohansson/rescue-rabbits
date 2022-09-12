@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <Header setAnimals={setAnimals} />
       <Nav setAnimals={setAnimals} />
-      {/* <AnimalOverlay /> */}
       <Routes>
         <Route
           path="1"

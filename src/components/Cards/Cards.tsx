@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import "./Cards.scss";
 import Card from "./Card/Card";
 import { Animal } from "../../models/animalInterface";
@@ -11,16 +10,13 @@ interface Props {
   chosenAnimal: Animal;
 }
 
-// let animalCard = document.querySelector('.animalCard')
-// const target = event.target as animalCard
-
 const CardGrid = ({
   animals,
   hiddenCss,
   setHiddenCss,
   setChosenAnimal,
   chosenAnimal,
-}: Props) => (
+}: Props): JSX.Element => (
   <section className="cardsContainer">
     {animals.map((animal) => (
       <Card

@@ -1,5 +1,5 @@
 import "./AdoptionForm.scss";
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom";
 
 interface Props {
@@ -20,7 +20,7 @@ const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
   };
   const navigate = useNavigate();
 
-  const submitHandler = () => {
+  const submitHandler: () => void = () => {
     setFormView(!formView);
     console.log(formView);
   };

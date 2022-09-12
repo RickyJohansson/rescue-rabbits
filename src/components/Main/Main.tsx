@@ -34,7 +34,7 @@ const Main = ({
     }
   }
 
-  const gotoAdoptionform = () => {
+  const gotoAdoptionform: () => void = () => {
     if (!chosenAnimal.adopted) {
       navigate("/1");
       setHiddenCss(!hiddenCss);

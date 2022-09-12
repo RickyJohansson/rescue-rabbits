@@ -12,18 +12,18 @@ interface Props {
 }
 
 function Header({ setAnimals }: Props) {
-  let allAnimals = jsonData.animals;
-  let query = "".toLowerCase();
+  let allAnimals: Array<Animal> = jsonData.animals;
+  let query: string = "".toLowerCase();
 
   const navigate = useNavigate();
 
-  function navigateHome() {
+  const navigateHome: () => void = () => {
     navigate("/");
   }
 
-  function getInputValue(event: any) {
+  const getInputValue: (event: any) => void = (event: any) => {
     query = event.target.value;
-    const filteredAnimals = [...allAnimals];
+    const filteredAnimals: Array<Animal> = [...allAnimals];
     if (event.keyCode == 13) {
       let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
         if (animal.animal.toLowerCase() === query) {
@@ -40,8 +40,8 @@ function Header({ setAnimals }: Props) {
     }
   }
 
-  function handleSearchButton() {
-    const filteredAnimals = [...allAnimals];
+  const handleSearchButton: () => void = () => {
+    const filteredAnimals: Array<Animal> = [...allAnimals];
     let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
       if (animal.animal.toLowerCase() === query) {
         return animal.animal;

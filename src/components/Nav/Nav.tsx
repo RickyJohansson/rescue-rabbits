@@ -6,20 +6,20 @@ interface Props {
     setAnimals: (animals: Animal[]) => void;
 }
 
-function Nav({setAnimals}: Props) {
+function Nav ({setAnimals}: Props) {
 
-    let allAnimals = jsonData.animals
+    let allAnimals: Array<Animal> = jsonData.animals;
 
     const handleCategory = (e: any) => {
 
-        const filteredAnimals = [...allAnimals]
-        let newFilteredAnimals = filteredAnimals.filter(dog => dog.animal === e.target.innerHTML)
+        const filteredAnimals: Array<Animal> = [...allAnimals]
+        let newFilteredAnimals: Array<Animal> = filteredAnimals.filter(dog => dog.animal === e.target.innerHTML)
         setAnimals(newFilteredAnimals);
 
     }
 
 
-    const showAllAnimals = () => {
+    const showAllAnimals: () => void = () => {
 
         setAnimals(allAnimals);
 

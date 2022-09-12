@@ -5,7 +5,7 @@ import FacebookLogo from "../../assets/social/facebook.svg";
 import LinkedinLogo from "../../assets/social/linkedin.svg";
 import InstagramLogo from "../../assets/social/instagram.svg";
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <footer>
       <nav className="footer__nav">

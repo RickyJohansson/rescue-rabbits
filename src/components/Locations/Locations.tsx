@@ -8,10 +8,10 @@ interface Props {
 
 function Locations({ setAnimals }: Props) {
   const handleLocation = (e: any) => {
-    const allAnimals = jsonData.animals;
+    const allAnimals: Array<Animal> = jsonData.animals;
 
-    const filteredLocations = [...allAnimals];
-    let newFilteredLocations = filteredLocations.filter(
+    const filteredLocations: Array<Animal> = [...allAnimals];
+    let newFilteredLocations: Array<Animal> = filteredLocations.filter(
       (location) => location.location === e.target.innerHTML
     );
     setAnimals(newFilteredLocations);

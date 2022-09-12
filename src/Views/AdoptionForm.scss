@@ -152,6 +152,11 @@
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
+  line-height: 42px;
+    h1 {
+      padding: 1rem;
+      text-align: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -186,10 +191,6 @@
     margin-bottom: 1rem;
   }
   .post-submit-container {
-    line-height: 42px;
-    h1 {
-      padding: 1rem;
-    }
     button {
       width: 50%;
     }
