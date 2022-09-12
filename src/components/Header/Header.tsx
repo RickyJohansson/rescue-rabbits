@@ -6,6 +6,7 @@ import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
 import { useNavigate } from "react-router-dom";
 import burgerMenu from "../../assets/menu.svg";
+import { useState } from 'react';
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
@@ -13,7 +14,7 @@ interface Props {
 
 function Header({ setAnimals }: Props) {
   let allAnimals: Array<Animal> = jsonData.animals;
-  let query: string = "".toLowerCase();
+  const [query, setQuery] = useState<string>("".toLowerCase());
 
   const navigate = useNavigate();
 
@@ -22,7 +23,7 @@ function Header({ setAnimals }: Props) {
   }
 
   const getInputValue: (event: any) => void = (event: any) => {
-    query = event.target.value;
+    setQuery(event.target.value);
     const filteredAnimals: Array<Animal> = [...allAnimals];
     if (event.keyCode == 13) {
       let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
@@ -38,6 +39,7 @@ function Header({ setAnimals }: Props) {
       });
       setAnimals(newFilteredAnimals);
     }
+    event.preventDefault();
   }
 
   const handleSearchButton: () => void = () => {
