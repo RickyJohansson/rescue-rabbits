@@ -1,51 +1,49 @@
+@mixin flex-column-center($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+}
+
 .adoptionContainer {
   width: 95%;
   height: 100%;
   background-color: #f5f5f5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-column-center();
   margin: 1rem;
   text-align: center;
   border: 1px solid black;
-}
 
-.adoptionContainer p {
-  color: black;
-  padding: 2rem;
-  font-size: 18px;
-  line-height: 36px;
-  text-align: left;
-}
+    p {
+      padding: 2rem;
+      font-size: 18px;
+      line-height: 36px;
+      text-align: left;
+    }
+    
+    .container {
+      max-width: 100%;
+      background-color: #f5f5f5;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
 
-.button-type-1 {
-  border-radius: 10px;
-  width: 25%;
-}
+        label {
+          outline: none;
+        }
 
-.container {
-  max-width: 100%;
-  background-color: #f5f5f5;
-  z-index: 2;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
+        input {
+          outline: none;
+          width: 14rem;
+          padding: 0.5rem;
+          border-radius: 10px;
+        }
 
-.container label {
-  outline: none;
-}
-
-.container input {
-  outline: none;
-  width: 14rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-}
-
-.container .radio-btn {
-  width: 1.25rem;
-  height: 1.25rem;
+        .radio-btn {
+          width: 1.25rem;
+          height: 1.25rem;
+        }
+    }
 }
 
 .submit-container {
@@ -55,10 +53,8 @@
 }
 
 .radio-buttons-container {
-  display: flex;
+  @include flex-column-center();
   width: 14.25rem;
-  justify-content: center;
-  flex-direction: column;
   margin: 1rem;
   padding: 0.5rem;
 
@@ -109,18 +105,14 @@
 }
 
 .container .flex-column {
-  display: flex;
-  flex-direction: column;
+  @include flex-column-center();
   margin: 1rem;
-  justify-content: center;
   align-items: center;
 }
 
 .container .flex-row {
-  display: flex;
-  flex-direction: row;
+  @include flex-column-center($direction: row);
   margin: 1rem;
-  justify-content: center;
   align-items: center;
 }
 
