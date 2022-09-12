@@ -6,6 +6,7 @@ import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
 import { useNavigate } from "react-router-dom";
 import burgerMenu from "../../assets/menu.svg";
+import { useState } from 'react';
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
@@ -13,7 +14,7 @@ interface Props {
 
 function Header({ setAnimals }: Props) {
   let allAnimals: Array<Animal> = jsonData.animals;
-  let query: string = "".toLowerCase();
+  const [query, setQuery] = useState<string>("".toLowerCase());
 
   const navigate = useNavigate();
 
@@ -21,26 +22,15 @@ function Header({ setAnimals }: Props) {
     navigate("/");
   }
 
+
   const getInputValue: (event: any) => void = (event: any) => {
-    query = event.target.value;
-    const filteredAnimals: Array<Animal> = [...allAnimals];
-    if (event.keyCode == 13) {
-      let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
-        if (animal.animal.toLowerCase() === query) {
-          return animal.animal;
-        } else if (animal.location.toLowerCase() === query) {
-          return animal.location;
-        } else if (animal.name.toLowerCase() === query) {
-          return animal.name;
-        } else if (animal.keyWords.includes(query)) {
-          return animal.keyWords;
-        }
-      });
-      setAnimals(newFilteredAnimals);
+    setQuery(event.target.value);
+    if (event.keyCode === 13) {
+      sortSearch(query);
     }
   }
 
-  const handleSearchButton: () => void = () => {
+  const sortSearch: (query: string) => void = (query: string) => {
     const filteredAnimals: Array<Animal> = [...allAnimals];
     let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
       if (animal.animal.toLowerCase() === query) {
@@ -56,6 +46,7 @@ function Header({ setAnimals }: Props) {
     setAnimals(newFilteredAnimals);
   }
 
+  
   return (
     <header>
       <section className="header__title">
@@ -69,7 +60,7 @@ function Header({ setAnimals }: Props) {
         <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />
         <a>
           <img
-            onClick={handleSearchButton}
+            onClick={() => sortSearch(query)}
             className="search-btn"
             src={Search_Btn}
             alt=""
