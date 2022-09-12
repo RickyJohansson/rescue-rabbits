@@ -39,7 +39,6 @@ function Header({ setAnimals }: Props) {
       });
       setAnimals(newFilteredAnimals);
     }
-    event.preventDefault();
   }
 
   const handleSearchButton: () => void = () => {
