@@ -13,20 +13,33 @@
   text-align: center;
   border: 1px solid black;
 
-    p {
-      padding: 2rem;
-      font-size: 18px;
-      line-height: 36px;
-      text-align: left;
-    }
-    
-    .container {
-      max-width: 100%;
-      background-color: #f5f5f5;
-      z-index: 2;
+  p {
+    padding: 2rem;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: left;
+  }
+
+  .container {
+    max-width: 100%;
+    background-color: #f5f5f5;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    form {
+      width: 100%;
+      padding: 4rem;
+      padding-top: 0;
       display: flex;
       flex-wrap: wrap;
-      width: 100%;
+      justify-content: space-between;
+
+      .flex-column {
+        @include flex-column-center();
+        margin: 1rem;
+        align-items: center;
 
         label {
           outline: none;
@@ -43,97 +56,83 @@
           width: 1.25rem;
           height: 1.25rem;
         }
+        textarea {
+          outline: none;
+          width: 14rem;
+          height: 4rem;
+          padding: 0.5rem;
+          border-radius: 10px;
+          resize: none;
+          writing-mode: horizontal-tb !important;
+          text-rendering: auto;
+          color: fieldtext;
+          letter-spacing: normal;
+          word-spacing: normal;
+          line-height: normal;
+          text-transform: none;
+          text-indent: 0px;
+          text-shadow: none;
+          display: inline-block;
+          text-align: start;
+          appearance: auto;
+          -webkit-rtl-ordering: logical;
+          cursor: text;
+          background-color: field;
+          margin: 0em;
+          padding: 0.5rem;
+          border-width: 2px;
+          border-style: inset;
+          border-color: -internal-light-dark(
+            rgb(118, 118, 118),
+            rgb(133, 133, 133)
+          );
+          border-image: initial;
+        }
+      }
+      .submit-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .submit {
+          appearance: none;
+          background-color: #1c4686;
+          color: white;
+          width: 50%;
+          align-self: center;
+          border: none;
+          padding: 1.5em 2em;
+          font-size: 20px;
+          border-radius: 5px;
+
+          &:hover {
+            cursor: pointer;
+          }
+
+          &:active {
+            background-color: #14315d;
+            color: grey;
+          }
+        }
+      }
+      .radio-buttons-container {
+        @include flex-column-center();
+        width: 14.25rem;
+        margin: 1rem;
+        padding: 0.5rem;
+
+        p {
+          padding: 0;
+          margin: 0;
+          text-align: center;
+        }
+        .flex-row {
+          @include flex-column-center($direction: row);
+          margin: 1rem;
+          align-items: center;
+        }
+      }
     }
-}
-
-.submit-container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.radio-buttons-container {
-  @include flex-column-center();
-  width: 14.25rem;
-  margin: 1rem;
-  padding: 0.5rem;
-
-  p {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-  }
-}
-
-.container textarea {
-  outline: none;
-  width: 14rem;
-  height: 4rem;
-  padding: 0.5rem;
-  border-radius: 10px;
-  resize: none;
-  writing-mode: horizontal-tb !important;
-  text-rendering: auto;
-  color: fieldtext;
-  letter-spacing: normal;
-  word-spacing: normal;
-  line-height: normal;
-  text-transform: none;
-  text-indent: 0px;
-  text-shadow: none;
-  display: inline-block;
-  text-align: start;
-  appearance: auto;
-  -webkit-rtl-ordering: logical;
-  cursor: text;
-  background-color: field;
-  margin: 0em;
-  padding: 0.5rem;
-  border-width: 2px;
-  border-style: inset;
-  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-  border-image: initial;
-}
-
-.container form {
-  width: 100%;
-  padding: 4rem;
-  padding-top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.container .flex-column {
-  @include flex-column-center();
-  margin: 1rem;
-  align-items: center;
-}
-
-.container .flex-row {
-  @include flex-column-center($direction: row);
-  margin: 1rem;
-  align-items: center;
-}
-
-.submit {
-  appearance: none;
-  background-color: #1c4686;
-  color: white;
-  width: 50%;
-  align-self: center;
-  border: none;
-  padding: 1.5em 2em;
-  font-size: 20px;
-  border-radius: 5px;
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:active {
-    background-color: #14315d;
-    color: grey;
   }
 }
 
@@ -145,10 +144,10 @@
   align-items: center;
   flex-direction: column;
   line-height: 42px;
-    h1 {
-      padding: 1rem;
-      text-align: center;
-    }
+  h1 {
+    padding: 1rem;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
