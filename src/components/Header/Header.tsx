@@ -22,26 +22,19 @@ function Header({ setAnimals }: Props) {
     navigate("/");
   }
 
+
   const getInputValue: (event: any) => void = (event: any) => {
     setQuery(event.target.value);
-    const filteredAnimals: Array<Animal> = [...allAnimals];
-    if (event.keyCode == 13) {
-      let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
-        if (animal.animal.toLowerCase() === query) {
-          return animal.animal;
-        } else if (animal.location.toLowerCase() === query) {
-          return animal.location;
-        } else if (animal.name.toLowerCase() === query) {
-          return animal.name;
-        } else if (animal.keyWords.includes(query)) {
-          return animal.keyWords;
-        }
-      });
-      setAnimals(newFilteredAnimals);
+    if (event.keyCode === 13) {
+      sortSearch(query);
     }
   }
 
   const handleSearchButton: () => void = () => {
+    sortSearch(query);
+  }
+
+  const sortSearch = (query: string) => {
     const filteredAnimals: Array<Animal> = [...allAnimals];
     let newFilteredAnimals: Animal[] = filteredAnimals.filter((animal) => {
       if (animal.animal.toLowerCase() === query) {
@@ -57,6 +50,7 @@ function Header({ setAnimals }: Props) {
     setAnimals(newFilteredAnimals);
   }
 
+  
   return (
     <header>
       <section className="header__title">
