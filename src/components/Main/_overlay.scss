@@ -1,0 +1,165 @@
+@use '../../styles/base';
+
+.IntroContainer {
+
+    .animal-overlay {
+        position: absolute;
+        background-color: white;
+        z-index: 4;
+        margin: auto;
+        width: 60%;
+        height: fit-content;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        box-shadow: 0px 1px 5px 0px #676767;
+        @include base.flex-column-center($justify: space-between);
+        padding: 2em;
+
+        .close-btn-wrapper {
+            align-self: flex-end;
+            position: absolute;
+        
+            .close-btn {
+                width: 30px;
+            }
+        }
+
+        .header-wrapper {
+            width: 50%;
+            padding: 1rem;
+            height: 20%;
+            display: flex;
+            justify-content: space-between;
+        
+            .header-vet-container {
+                align-items: flex-end;
+            
+                .vet-logo {
+                    width: 90px;
+                }
+            }
+        
+            .header-text-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h1,
+                h2 {
+                    text-align: center;
+                }
+
+                h1 {
+                    @extend %font-style-title;
+                    margin-bottom: 0;
+                }
+                
+                h2 {
+                    font-size: 18px;
+                    margin-top: 0.5em;
+                }
+            }
+        }
+    
+        .overlay-wrapper {
+            display: flex;
+            justify-content: center;
+            gap: 3em;
+    
+            .img-wrapper {
+
+                .overlay-img {
+                    aspect-ratio: 1;
+                    width: 18.75rem;
+                    height: 18.75rem;
+                }
+            }
+    
+        }
+    
+    }
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-wrapper p {
+    @extend %font-style-bread;
+    line-height: 24px;
+    margin: 0.2em;
+}
+
+.link-text {
+    @extend %font-style-bread;
+    line-height: 24px;
+    text-align: center;
+}
+
+span {
+    @extend %font-style-bread;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+button {
+    @extend %button;
+    align-self: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #14315d;
+        color: grey;
+    }
+}
+
+.adopted-btn {
+    background-color: grey;
+
+    &:hover {
+        cursor: auto;
+    }
+
+    &:active {
+        background-color: grey;
+        color: white;
+    }
+}
+
+.adopted-text {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+.animal-overlay {
+    top: 30em;
+}
+
+.animal-overlay .overlay-wrapper {
+    flex-direction: column;
+}
+
+.animal-overlay .overlay-wrapper {
+    flex-direction: column;
+}
+.animal-overlay .overlay-img {
+    aspect-ratio: 1;
+    max-width: 14rem;
+    max-height: 14rem;
+}
+
+button {
+    width: 100%;
+}
+}

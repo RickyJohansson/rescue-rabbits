@@ -1,4 +1,5 @@
 @use '../../styles/base';
+@use './overlay.scss';
 
 main {
   grid-area: content;
@@ -6,6 +7,7 @@ main {
   flex-wrap: wrap;
 }
 
+<<<<<<< Updated upstream
 //ALLT OVERLAY-RELATERAT KAN GÖRAS TILL EN PARTIAL-FIL
 
 .animal-overlay {
@@ -34,6 +36,8 @@ main {
   gap: 3em;
 }
 
+=======
+>>>>>>> Stashed changes
 .IntroContainer {
   min-height: 100vh;
   @include base.flex-column-center();
@@ -49,6 +53,7 @@ main {
 .fillContainer {
   min-height: 150vh;
 }
+<<<<<<< Updated upstream
 
 .animal-overlay h1,
 .animal-overlay h2 {
@@ -170,3 +175,5 @@ button {
     width: 100%;
   }
 }
+=======
+>>>>>>> Stashed changes
