@@ -1,3 +1,5 @@
+@use '../../styles/base';
+
 footer {
   grid-area: footer;
   z-index: 1;
@@ -7,11 +9,9 @@ footer {
   justify-content: space-evenly;
   padding: 2em;
   gap: 4em;
-  padding: 1em;
 }
 
 footer .footer__nav {
-  background-color: #473f3f;
   display: flex;
   flex-direction: column;
 }
@@ -21,15 +21,11 @@ footer .footer__nav a {
   color: white;
 }
 
-footer .footer__adress p {
-  line-height: 44px;
-}
-
 footer p,
 footer a {
+  @extend %font-style-bread;
   margin: 1em;
   text-align: center;
-  font-size: 16px;
 }
 
 @media screen and (max-width: 900px) {

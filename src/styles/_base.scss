@@ -1,0 +1,36 @@
+@use './variables';
+
+@mixin flex-column-center($direction: column, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+  }
+
+%font-style-bread {
+  font-size: variables.$font-size-bread;
+  font-weight: variables.$font-weight-bread;
+  line-height: variables.$font-height-bread;
+} 
+
+%font-style-title {
+  font-size: variables.$font-size-title;
+  font-weight: variables.$font-weight-title;
+  line-height: variables.$font-height-title;
+}
+
+%font-style-medium {
+  font-size: variables.$font-size-medium;
+  font-weight: variables.$font-weight-medium;
+  line-height: variables.$font-height-medium;
+}
+
+%button {
+  appearance: none;
+  background-color: variables.$blue;
+  color: white;
+  border: none;
+  padding: 1.5em 2em;
+  font-size: 20px;
+  border-radius: 5px;
+  width: 50%;
+}

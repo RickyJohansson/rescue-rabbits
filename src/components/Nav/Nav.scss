@@ -1,3 +1,5 @@
+@use '../../styles/base';
+
 nav {
   grid-area: nav;
   position: sticky;
@@ -9,6 +11,8 @@ nav {
     margin-top: 5rem;
     position: fixed;
     text-align: center;
+    @extend %font-style-title;
+    font-size: 1.8rem;
   }
   ul {
     display: flex;
@@ -19,11 +23,8 @@ nav {
     padding: 0;
     position: fixed;
     a {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 2.5rem;
+      @extend %font-style-medium;
       text-align: center;
-      padding: 0;
       &:hover {
         cursor: pointer;
       }

@@ -135,7 +135,7 @@ const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
     return (
       <div className="post-submit-container">
         <h1>Tack för visat intresse! Vi hör av oss inom 3-29 arbetsdagar.</h1>
-        <button onClick={goToStart}>Tillbaka</button>
+        <button className="submit" onClick={goToStart}>Tillbaka</button>
       </div>
     );
   }

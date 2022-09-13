@@ -1,3 +1,5 @@
+@use '../../styles/base';
+
 header {
   grid-area: header;
   position: sticky;
@@ -18,12 +20,7 @@ header section {
 
 header h1 {
   margin: 0 auto;
-}
-
-header input {
-  height: 2em;
-  font-size: 18px;
-  outline: none;
+  @extend %font-style-title;
 }
 
 header .search-btn {
@@ -34,13 +31,12 @@ header .search-btn {
 
 header section input {
   height: 2em;
-  font-size: 18px;
   outline: none;
   border-radius: 10px;
   text-align: center;
-  // border: 1px solid rgb(35, 35, 35);
   box-shadow: inset 0px 1px 5px 0px #676767;
   border: none;
+  @extend %font-style-bread;
 }
 
 header section a:hover {

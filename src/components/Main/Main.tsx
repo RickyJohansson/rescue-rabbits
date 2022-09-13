@@ -62,7 +62,7 @@ const Main = ({
   if (hiddenCss) {
     return (
       <section className="IntroContainer">
-        <p>
+        <p className="intro-text">
           Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s. When an unknown printer took a galley of type and scrambled it
           to make a type specimen book. It has survived not only five centuries,
@@ -70,7 +70,7 @@ const Main = ({
           unchanged. It was popularised in the 1960s with the release of
           Letraset sheets containing Lorem Ipsum passages, and more recently
           with desktop publishing software like Aldus PageMaker including
-          versions of Lorem Ipsum.
+          versions of Lorem.
         </p>
         <div className="cardsContainer">
           <Cards
