@@ -31,9 +31,8 @@
       width: 100%;
       padding: 4rem;
       padding-top: 0;
-      display: flex;
+      @include base.flex-column-center($justify: space-between, $direction: row);
       flex-wrap: wrap;
-      justify-content: space-between;
 
       .flex-column {
         @include base.flex-column-center();
@@ -90,8 +89,8 @@
       }
       .submit-container {
         width: 100%;
-        display: flex;
-        justify-content: flex-end;
+
+        @include base.flex-column-center($justify: flex-end, $direction: row);
 
         .submit {
           @extend %button;
@@ -130,10 +129,8 @@
 .post-submit-container {
   width: 100%;
   min-height: 80vh;
-  display: flex;
-  justify-content: space-evenly;
+  @include base.flex-column-center($justify: space-evenly);
   align-items: center;
-  flex-direction: column;
   line-height: 42px;
   h1 {
     @extend %font-style-title;
@@ -145,8 +142,7 @@
 
 @media screen and (max-width: 900px) {
   .adoptionContainer {
-    display: flex;
-    justify-content: center;
+    @include base.flex-column-center();
     margin: 0;
     width: 100%;
     border: none;
@@ -166,12 +162,11 @@
 
   .container form {
     padding: 0rem;
-    display: flex;
-    justify-content: center;
+    @include base.flex-column-center($direction: row);
   }
 
-  .submit-container {
-    justify-content: center;
+  .adoptionContainer .container form .submit-container {
+    @include base.flex-column-center($justify: center, $direction: row);
     margin-bottom: 1rem;
   }
   .post-submit-container {

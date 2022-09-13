@@ -6,8 +6,7 @@ header {
   top: 0;
   z-index: 3;
   background-color: #fec200;
-  display: flex;
-  justify-content: space-between;
+  @include base.flex-column-center($justify: space-between, $direction: row);
   align-items: center;
   padding: 0 1em 0 1em;
 }

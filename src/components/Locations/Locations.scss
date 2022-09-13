@@ -5,8 +5,7 @@ aside {
   position: sticky;
   right: 0;
   bottom: 50;
-  display: flex;
-  justify-content: center;
+  @include base.flex-column-center($direction: row);
 }
 
 aside h1 {
@@ -18,8 +17,7 @@ aside h1 {
 }
 
 aside ul {
-  display: flex;
-  flex-direction: column;
+  @include base.flex-column-center($justify: flex-start);
   margin-top: 10rem;
   list-style: none;
   text-align: left;

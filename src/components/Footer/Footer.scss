@@ -5,15 +5,13 @@ footer {
   z-index: 1;
   background-color: #473f3f;
   color: white;
-  display: flex;
-  justify-content: space-evenly;
+  @include base.flex-column-center($justify: space-evenly, $direction: row);
   padding: 2em;
   gap: 4em;
 }
 
 footer .footer__nav {
-  display: flex;
-  flex-direction: column;
+  @include base.flex-column-center();
 }
 
 footer .footer__nav a {
@@ -34,19 +32,15 @@ footer a {
     align-content: space-evenly;
   }
   footer .footer__social {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    @include base.flex-column-center();
   }
   footer .socialWrapper {
-    display: flex;
-    justify-content: center;
+    @include base.flex-column-center($direction: row);
     width: 100%;
   }
 
   footer .logoWrapper {
-    display: flex;
-    justify-content: center;
+    @include base.flex-column-center($direction: row);
     flex-wrap: wrap;
   }
 
