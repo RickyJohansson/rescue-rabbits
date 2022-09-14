@@ -17,7 +17,7 @@ function Locations({ setAnimals, setQueriedAnimals }: Props) {
     );
     setAnimals(newFilteredLocations);
     setQueriedAnimals(
-      `Visar alla sökningar för ${newFilteredLocations[0].location}`
+      `Visar alla sökningar för "${newFilteredLocations[0].location}"`
     );
   };
 

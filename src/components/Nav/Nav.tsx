@@ -17,7 +17,7 @@ function Nav({ setAnimals, setQueriedAnimals }: Props) {
     );
     setAnimals(newFilteredAnimals);
     setQueriedAnimals(
-      `Visar alla sökningar för ${newFilteredAnimals[0].animal}`
+      `Visar alla sökningar för "${newFilteredAnimals[0].animal}"`
     );
   };
 

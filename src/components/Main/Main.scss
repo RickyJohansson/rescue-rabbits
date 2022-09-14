@@ -16,6 +16,12 @@ main {
   .intro-text {
     padding: 4em 4em 0 4em;
     text-align: center;
+    @extend %font-style-bread;
+  }
+
+  .search-result-text {
+    padding: 4em 4em 0 4em;
+    text-align: center;
     @extend %font-style-medium;
   }
 }

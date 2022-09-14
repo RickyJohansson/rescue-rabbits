@@ -58,18 +58,19 @@ header {
     .sidebar__overlay {
       display: none;
       @include base.flex-column-center($justify: flex-start);
-      transform: translateY(360px) translateX(-2000px);
+      transform: translateY(100px) translateX(-500px);
       background-color: #f5f5f5;
       z-index: 4;
-      border: 1px solid black;
+      box-shadow: 0px 1px 5px 0px #676767;
+      animation: slide-out 3s ease-in;
       ul {
         list-style: none;
-        color: black;
         padding: 0.5rem;
         @include base.flex-column-center();
         align-items: center;
-        a {
+        .menu-link {
           text-decoration: none;
+          color: #232323;
           margin: 0.5rem;
         }
       }
@@ -79,14 +80,15 @@ header {
         line-height: 60px;
       }
     }
-    .hidden {
-      width: 50vw;
-      height: 90vh;
+    .visible {
+      width: 12rem;
+      height: fit-content;
       display: flex;
       position: absolute;
       border-radius: 20px;
       align-items: center;
-      transform: translateY(410px) translateX(-18px);
+      transform: translateY(216px) translateX(-18px);
+      animation: slide-in 0.35s ease-out;
     }
     .header__title {
       width: 100%;
@@ -113,5 +115,25 @@ header {
         width: 7rem;
       }
     }
+  }
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-500px) translateY(216px);
+  }
+
+  to {
+    transform: translateX(-18px) translateY(216px);
+  }
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(-18px) translateY(26px);
+  }
+
+  to {
+    transform: translateX(-500px) translateY(26px);
   }
 }

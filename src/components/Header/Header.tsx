@@ -23,7 +23,7 @@ function Header({
 }: Props) {
   let allAnimals: Array<Animal> = jsonData.animals;
   const [query, setQuery] = useState<string>("".toLowerCase());
-  let hiddenClass: string = menuVisible ? " hidden" : "";
+  let visibleClass: string = menuVisible ? " visible" : "";
   const navigate = useNavigate();
 
   const navigateHome: () => void = () => {
@@ -37,7 +37,7 @@ function Header({
     setQuery(event.target.value.toLowerCase());
     if (event.keyCode === 13) {
       sortSearch(query);
-      setQueriedAnimals(`Visar alla sökningar för ${query}`);
+      setQueriedAnimals(`Visar alla sökningar för "${query}"`);
     }
   };
 
@@ -55,28 +55,28 @@ function Header({
       }
     });
     setAnimals(newFilteredAnimals);
-    setQueriedAnimals(`Visar alla sökningar för ${query}`);
+    setQueriedAnimals(`Visar alla sökningar för "${query}"`);
   };
 
   return (
     <header>
-      <div className={`sidebar__overlay ${hiddenClass}`}>
+      <div className={`sidebar__overlay ${visibleClass}`}>
         <h1>NAVIGERING</h1>
         <ul>
-          <a>Alla djur</a>
-          <a>Hund</a>
-          <a>Katt</a>
-          <a>Markatta</a>
-          <a>Minigris</a>
-          <a>Hamster</a>
+          <a className="menu-link" href="">Alla djur</a>
+          <a className="menu-link" href="">Hund</a>
+          <a className="menu-link" href="">Katt</a>
+          <a className="menu-link" href="">Markatta</a>
+          <a className="menu-link" href="">Minigris</a>
+          <a className="menu-link" href="">Hamster</a>
         </ul>
-        <h1>HÄR FINNS VI</h1>
+        {/* <h1>HÄR FINNS VI</h1>
         <ul>
           <a>Stockholm</a>
           <a>Göteborg</a>
           <a>Karlstad</a>
           <a>Linköping</a>
-        </ul>
+        </ul> */}
       </div>
       <section className="header__title">
         <img

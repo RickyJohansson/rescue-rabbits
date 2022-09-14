@@ -45,6 +45,7 @@ const Main = ({
 
   let adoptedText: string = "";
   let adoptedBtn: string = adoptedCss ? " adopted-btn" : "";
+  // let textType: string = queriedAnimals ? 'intro-text' : 'search-result-text';
 
   useEffect(() => {
     if (chosenAnimal.adopted) {
@@ -65,6 +66,7 @@ const Main = ({
     return (
       <section className="IntroContainer">
         <p className="intro-text">{queriedAnimals}</p>
+        {/* <p className="search-result-text">{queriedAnimals}</p> */}
         <div className="cardsContainer">
           <Cards
             chosenAnimal={chosenAnimal}

@@ -1,6 +1,5 @@
 import "./Card.scss";
 import { Animal } from "../../../models/animalInterface";
-import React from "react";
 import Adopted from "../../../assets/adopterad.svg";
 
 interface Props {
