@@ -82,6 +82,7 @@ header {
       }
     }
     .visible {
+      z-index: 6;
       width: 12rem;
       height: fit-content;
       display: flex;
@@ -111,8 +112,8 @@ header {
 
     }
     .header__search {
-      header input {
-        width: 7rem;
+      input {
+        width: 5rem;
       }
     }
   }

@@ -88,13 +88,13 @@ function Header({
           <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Minigris</a>
           <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Hamster</a>
         </ul>
-        {/*<h1>HÄR FINNS VI</h1>
+        {/* <h1>HÄR FINNS VI</h1>
         <ul>
           <a>Stockholm</a>
           <a>Göteborg</a>
           <a>Karlstad</a>
           <a>Linköping</a>
-        </ul>*/}
+        </ul> */}
       </div>
       <section className="header__title">
         <img
