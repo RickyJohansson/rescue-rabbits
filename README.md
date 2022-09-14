@@ -3,6 +3,8 @@
 Länk till Trello (User Stories):
 https://trello.com/b/R2wO17ke/user-stories
 
+@David - Du ska ha fått en mail med en invite till detta från oss!
+
 Länk till GitHub Projects (Todos): 
 https://github.com/users/Hampus83/projects/4
 
