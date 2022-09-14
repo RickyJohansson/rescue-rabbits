@@ -23,6 +23,9 @@ function Nav({ setAnimals, setQueriedAnimals }: Props) {
 
   const showAllAnimals: () => void = () => {
     setAnimals(allAnimals);
+    setQueriedAnimals(
+      `Visar alla sökningar för "Alla Djur"`
+    );
   };
 
   return (

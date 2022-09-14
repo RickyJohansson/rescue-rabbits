@@ -21,7 +21,6 @@ function App() {
   const [adoptedCss, setAdoptedCss] = useState<boolean>(false);
   const [queriedAnimals, setQueriedAnimals] = useState<string>(string);
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
-  // const [textType, setTextType] = useState<boolean>(false);
 
   return (
     <div className="App">
