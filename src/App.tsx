@@ -36,9 +36,11 @@ function App() {
           path="1"
           element={
             <AdoptionForm
+              animals={animals}
               setFormView={setFormView}
               formView={formView}
               setHiddenCss={setHiddenCss}
+              chosenAnimal={chosenAnimal}
             />
           }
         />

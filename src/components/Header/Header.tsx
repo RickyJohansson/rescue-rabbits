@@ -6,6 +6,7 @@ import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
 import burgerMenu from "../../assets/menu.svg";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
@@ -13,7 +14,6 @@ interface Props {
   menuVisible: boolean;
   setMenuVisible: (menuVisible: boolean) => void;
 }
-
 function Header({
   setAnimals,
   setQueriedAnimals,
@@ -23,8 +23,7 @@ function Header({
   let allAnimals: Array<Animal> = jsonData.animals;
   const [query, setQuery] = useState<string>("".toLowerCase());
   let visibleClass: string = menuVisible ? " visible" : "";
-
-
+  const navigate = useNavigate();
   const handleMenuClick: () => void = () => {
     setMenuVisible(!menuVisible);
   };
@@ -34,6 +33,7 @@ function Header({
     if (event.keyCode === 13) {
       sortSearch(query);
       setQueriedAnimals(`Visar alla sökningar för "${query}"`);
+      navigate("/");
     }
   };
 
@@ -52,6 +52,7 @@ function Header({
     });
     setAnimals(newFilteredAnimals);
     setQueriedAnimals(`Visar alla sökningar för "${query}"`);
+    navigate("/");
   };
 
   const handleOverlayCategory = (e: any) => {
@@ -70,9 +71,7 @@ function Header({
   const showAllAnimals: (e: any) => void = (e: any) => {
     setAnimals(allAnimals);
     setMenuVisible(!menuVisible);
-    setQueriedAnimals(
-      `Visar alla sökningar för "Alla Djur"`
-    );
+    setQueriedAnimals(`Visar alla sökningar för "Alla Djur"`);
     e.preventDefault();
   };
 
@@ -81,12 +80,44 @@ function Header({
       <div className={`sidebar__overlay ${visibleClass}`}>
         <h1>NAVIGERING</h1>
         <ul>
-          <a onClick={showAllAnimals} className="menu-link" href="">Alla djur</a>
-          <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Hund</a>
-          <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Katt</a>
-          <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Markatta</a>
-          <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Minigris</a>
-          <a onClick={(e) => handleOverlayCategory(e)} className="menu-link" href="">Hamster</a>
+          <a onClick={showAllAnimals} className="menu-link" href="">
+            Alla djur
+          </a>
+          <a
+            onClick={(e) => handleOverlayCategory(e)}
+            className="menu-link"
+            href=""
+          >
+            Hund
+          </a>
+          <a
+            onClick={(e) => handleOverlayCategory(e)}
+            className="menu-link"
+            href=""
+          >
+            Katt
+          </a>
+          <a
+            onClick={(e) => handleOverlayCategory(e)}
+            className="menu-link"
+            href=""
+          >
+            Markatta
+          </a>
+          <a
+            onClick={(e) => handleOverlayCategory(e)}
+            className="menu-link"
+            href=""
+          >
+            Minigris
+          </a>
+          <a
+            onClick={(e) => handleOverlayCategory(e)}
+            className="menu-link"
+            href=""
+          >
+            Hamster
+          </a>
         </ul>
         {/* <h1>HÄR FINNS VI</h1>
         <ul>
@@ -106,7 +137,9 @@ function Header({
         <a href="">
           <img className="logo" src={Logo} alt="" />
         </a>
-        <a href="" className="main-title">Rescue Rabbits</a>
+        <a href="" className="main-title">
+          Rescue Rabbits
+        </a>
       </section>
       <section className="header__search">
         <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />

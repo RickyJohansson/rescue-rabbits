@@ -1,14 +1,24 @@
 import "./AdoptionForm.scss";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Animal } from "../models/animalInterface";
 interface Props {
+  animals: Animal[];
   setHiddenCss: (hiddenCss: boolean) => void;
   setFormView: (formView: boolean) => void;
   formView: boolean;
+  chosenAnimal: Animal;
 }
 
-const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
+const adoptionForm = ({
+  animals,
+  setHiddenCss,
+  setFormView,
+  formView,
+  chosenAnimal,
+}: Props) => {
+  const navigate = useNavigate();
+
   const goToStart = () => {
     setHiddenCss(true);
     setFormView(!formView);
@@ -18,7 +28,6 @@ const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
   const radioHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.target.value;
   };
-  const navigate = useNavigate();
 
   const submitHandler: () => void = () => {
     setFormView(!formView);
@@ -27,7 +36,7 @@ const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
   if (formView) {
     return (
       <div className="adoptionContainer">
-        <h1> Vad kul att du vill rädda ett djur!</h1>
+        <h1> Vad kul att du vill rädda {chosenAnimal.name}!</h1>
         <p>
           Att adoptera ett djur ger dig inte bara en ny vän, utan en ny
           familjemedlem. Eftersom vi vill vara säkra på att djurets nya hem ska
@@ -135,7 +144,9 @@ const adoptionForm = ({ setHiddenCss, setFormView, formView }: Props) => {
     return (
       <div className="post-submit-container">
         <h1>Tack för visat intresse! Vi hör av oss inom 3-29 arbetsdagar.</h1>
-        <button className="submit" onClick={goToStart}>Tillbaka</button>
+        <button className="submit" onClick={goToStart}>
+          Tillbaka
+        </button>
       </div>
     );
   }

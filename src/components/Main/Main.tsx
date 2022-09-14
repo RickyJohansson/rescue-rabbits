@@ -116,7 +116,7 @@ const Main = ({
                   <span>Finns i:</span> {chosenAnimal.location}
                 </p>
                 <p>
-                  <span>Djuret ankom till rescue rabbits:</span>{" "}
+                  <span>Djuret ankom till rescue rabbits:</span>
                   {chosenAnimal.uploaded}
                 </p>
                 <br />
@@ -125,7 +125,7 @@ const Main = ({
               </div>
             </div>
             <p className="link-text">
-              Läs mer om {chosenAnimal.animal} och hur man sköter dem{" "}
+              Läs mer om {chosenAnimal.animal} och hur man sköter dem
               <a href="#">HÄR!</a>
             </p>
             <button
