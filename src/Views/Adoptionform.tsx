@@ -3,7 +3,6 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Animal } from "../models/animalInterface";
 interface Props {
-  animals: Animal[];
   setHiddenCss: (hiddenCss: boolean) => void;
   setFormView: (formView: boolean) => void;
   formView: boolean;
@@ -11,7 +10,6 @@ interface Props {
 }
 
 const adoptionForm = ({
-  animals,
   setHiddenCss,
   setFormView,
   formView,

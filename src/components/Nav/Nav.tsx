@@ -1,13 +1,25 @@
 import "./Nav.scss";
 import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
-
+import { useNavigate } from "react-router-dom";
 interface Props {
   setAnimals: (animals: Animal[]) => void;
   setQueriedAnimals: (queriedAnimals: string) => void;
+  formView: boolean;
+  setFormView: (formView: boolean) => void;
+  setHiddenCss: (hiddenCss: boolean) => void;
+  hiddenCss: boolean;
 }
 
-function Nav({ setAnimals, setQueriedAnimals }: Props) {
+function Nav({
+  setAnimals,
+  setQueriedAnimals,
+  formView,
+  setFormView,
+  setHiddenCss,
+  hiddenCss,
+}: Props) {
+  const navigate = useNavigate();
   let allAnimals: Array<Animal> = jsonData.animals;
 
   const handleCategory = (e: any) => {
@@ -15,6 +27,11 @@ function Nav({ setAnimals, setQueriedAnimals }: Props) {
     let newFilteredAnimals: Array<Animal> = filteredAnimals.filter(
       (dog) => dog.animal === e.target.innerHTML
     );
+    if (formView || hiddenCss) {
+      setFormView(true);
+      setHiddenCss(true);
+      navigate("/");
+    }
     setAnimals(newFilteredAnimals);
     setQueriedAnimals(
       `Visar alla sökningar för "${newFilteredAnimals[0].animal}"`
@@ -23,9 +40,7 @@ function Nav({ setAnimals, setQueriedAnimals }: Props) {
 
   const showAllAnimals: () => void = () => {
     setAnimals(allAnimals);
-    setQueriedAnimals(
-      `Visar alla sökningar för "Alla Djur"`
-    );
+    setQueriedAnimals(`Visar alla sökningar för "Alla Djur"`);
   };
 
   return (

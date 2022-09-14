@@ -1,16 +1,33 @@
 import "./Locations.scss";
 import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
+import { useNavigate } from "react-router-dom";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
   setQueriedAnimals: (queriedAnimals: string) => void;
+  formView: boolean;
+  setFormView: (formView: boolean) => void;
+  setHiddenCss: (hiddenCss: boolean) => void;
+  hiddenCss: boolean;
 }
 
-function Locations({ setAnimals, setQueriedAnimals }: Props) {
+function Locations({
+  setAnimals,
+  setQueriedAnimals,
+  formView,
+  setFormView,
+  setHiddenCss,
+  hiddenCss,
+}: Props) {
+  const navigate = useNavigate();
   const handleLocation = (e: any) => {
     const allAnimals: Array<Animal> = jsonData.animals;
-
+    if (formView || hiddenCss) {
+      setFormView(true);
+      setHiddenCss(true);
+      navigate("/");
+    }
     const filteredLocations: Array<Animal> = [...allAnimals];
     let newFilteredLocations: Array<Animal> = filteredLocations.filter(
       (location) => location.location === e.target.innerHTML

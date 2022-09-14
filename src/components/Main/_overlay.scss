@@ -135,6 +135,7 @@
 @media screen and (max-width: 900px) {
   .IntroContainer {
     .animal-overlay {
+      z-index: 2;
       top: 30em;
       .overlay-wrapper {
         @include base.flex-column-center($direction: column);

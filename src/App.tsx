@@ -29,14 +29,22 @@ function App() {
         setQueriedAnimals={setQueriedAnimals}
         menuVisible={menuVisible}
         setMenuVisible={setMenuVisible}
+        setHiddenCss={setHiddenCss}
+        hiddenCss={hiddenCss}
       />
-      <Nav setAnimals={setAnimals} setQueriedAnimals={setQueriedAnimals} />
+      <Nav
+        hiddenCss={hiddenCss}
+        setHiddenCss={setHiddenCss}
+        setFormView={setFormView}
+        formView={formView}
+        setAnimals={setAnimals}
+        setQueriedAnimals={setQueriedAnimals}
+      />
       <Routes>
         <Route
           path="1"
           element={
             <AdoptionForm
-              animals={animals}
               setFormView={setFormView}
               formView={formView}
               setHiddenCss={setHiddenCss}
@@ -60,7 +68,14 @@ function App() {
           }
         />
       </Routes>
-      <Location setAnimals={setAnimals} setQueriedAnimals={setQueriedAnimals} />
+      <Location
+        hiddenCss={hiddenCss}
+        setHiddenCss={setHiddenCss}
+        setFormView={setFormView}
+        formView={formView}
+        setAnimals={setAnimals}
+        setQueriedAnimals={setQueriedAnimals}
+      />
       <Footer />
     </div>
   );

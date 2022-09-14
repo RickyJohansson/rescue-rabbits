@@ -13,12 +13,16 @@ interface Props {
   setQueriedAnimals: (queriedAnimals: string) => void;
   menuVisible: boolean;
   setMenuVisible: (menuVisible: boolean) => void;
+  setHiddenCss: (hiddenCss: boolean) => void;
+  hiddenCss: boolean;
 }
 function Header({
   setAnimals,
   setQueriedAnimals,
   menuVisible,
   setMenuVisible,
+  setHiddenCss,
+  hiddenCss,
 }: Props) {
   let allAnimals: Array<Animal> = jsonData.animals;
   const [query, setQuery] = useState<string>("".toLowerCase());
@@ -34,6 +38,7 @@ function Header({
       sortSearch(query);
       setQueriedAnimals(`Visar alla sökningar för "${query}"`);
       navigate("/");
+      setHiddenCss(!hiddenCss);
     }
   };
 
