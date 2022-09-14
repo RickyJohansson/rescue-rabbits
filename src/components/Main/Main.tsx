@@ -14,6 +14,7 @@ interface Props {
   chosenAnimal: Animal;
   adoptedCss: boolean;
   setAdoptedCss: (adoptedCss: boolean) => void;
+  queriedAnimals: string;
 }
 
 const Main = ({
@@ -24,6 +25,7 @@ const Main = ({
   chosenAnimal,
   adoptedCss,
   setAdoptedCss,
+  queriedAnimals,
 }: Props) => {
   let hiddenClass: string = hiddenCss ? " hidden" : "";
   const navigate = useNavigate();
@@ -62,16 +64,7 @@ const Main = ({
   if (hiddenCss) {
     return (
       <section className="IntroContainer">
-        <p className="intro-text">
-          Lorem Ipsum has been the industry's standard dummy text ever since the
-          1500s. When an unknown printer took a galley of type and scrambled it
-          to make a type specimen book. It has survived not only five centuries,
-          but also the leap into electronic typesetting, remaining essentially
-          unchanged. It was popularised in the 1960s with the release of
-          Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including
-          versions of Lorem.
-        </p>
+        <p className="intro-text">{queriedAnimals}</p>
         <div className="cardsContainer">
           <Cards
             chosenAnimal={chosenAnimal}

@@ -1,5 +1,5 @@
-@use '../../styles/base';
-@use './overlay.scss';
+@use "../../styles/base";
+@use "./overlay.scss";
 
 main {
   grid-area: content;
@@ -9,17 +9,13 @@ main {
 
 .IntroContainer {
   min-height: 100vh;
-  display: flex;
-  padding: 0rem 1rem 0rem 1rem;
-  flex-direction: column;
+  @include base.flex-column-center($justify: auto);
   align-items: center;
+  padding: 0rem 1rem 0rem 1rem;
+
   .intro-text {
     padding: 4em 4em 0 4em;
     text-align: center;
-    @extend %font-style-bread;
+    @extend %font-style-medium;
   }
-}
-
-.fillContainer {
-  min-height: 150vh;
 }

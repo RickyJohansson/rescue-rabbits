@@ -6,29 +6,40 @@ import { Animal } from "../../models/animalInterface";
 import jsonData from "../../animals.json";
 import { useNavigate } from "react-router-dom";
 import burgerMenu from "../../assets/menu.svg";
-import { useState } from 'react';
+import { useState } from "react";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
+  setQueriedAnimals: (queriedAnimals: string) => void;
+  menuVisible: boolean;
+  setMenuVisible: (menuVisible: boolean) => void;
 }
 
-function Header({ setAnimals }: Props) {
+function Header({
+  setAnimals,
+  setQueriedAnimals,
+  menuVisible,
+  setMenuVisible,
+}: Props) {
   let allAnimals: Array<Animal> = jsonData.animals;
   const [query, setQuery] = useState<string>("".toLowerCase());
-
+  let hiddenClass: string = menuVisible ? " hidden" : "";
   const navigate = useNavigate();
 
   const navigateHome: () => void = () => {
     navigate("/");
-  }
-
+  };
+  const handleMenuClick: () => void = () => {
+    setMenuVisible(!menuVisible);
+  };
 
   const getInputValue: (event: any) => void = (event: any) => {
-    setQuery(event.target.value);
+    setQuery(event.target.value.toLowerCase());
     if (event.keyCode === 13) {
       sortSearch(query);
+      setQueriedAnimals(`Visar alla sökningar för ${query}`);
     }
-  }
+  };
 
   const sortSearch: (query: string) => void = (query: string) => {
     const filteredAnimals: Array<Animal> = [...allAnimals];
@@ -44,19 +55,42 @@ function Header({ setAnimals }: Props) {
       }
     });
     setAnimals(newFilteredAnimals);
-  }
+    setQueriedAnimals(`Visar alla sökningar för ${query}`);
+  };
 
-  
   return (
     <header>
+      <div className={`sidebar__overlay ${hiddenClass}`}>
+        <h1>NAVIGERING</h1>
+        <ul>
+          <a>Alla djur</a>
+          <a>Hund</a>
+          <a>Katt</a>
+          <a>Markatta</a>
+          <a>Minigris</a>
+          <a>Hamster</a>
+        </ul>
+        <h1>HÄR FINNS VI</h1>
+        <ul>
+          <a>Stockholm</a>
+          <a>Göteborg</a>
+          <a>Karlstad</a>
+          <a>Linköping</a>
+        </ul>
+      </div>
       <section className="header__title">
-        <img className="burgerMenu" src={burgerMenu} alt="" />
+        <img
+          onClick={handleMenuClick}
+          className="hamburger"
+          src={burgerMenu}
+          alt=""
+        />
         <a onClick={navigateHome}>
           <img className="logo" src={Logo} alt="" />
         </a>
         <h1>Rescue Rabbits</h1>
       </section>
-      <section>
+      <section className="header__search">
         <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />
         <a>
           <img

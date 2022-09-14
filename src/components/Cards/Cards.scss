@@ -1,8 +1,7 @@
-@use '../../styles/base';
+@use "../../styles/base";
 
 .cardsContainer {
   width: 100%;
   @include base.flex-column-center($justify: space-evenly, $direction: row);
   flex-wrap: wrap;
-  
 }

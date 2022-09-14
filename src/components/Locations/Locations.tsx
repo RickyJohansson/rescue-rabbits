@@ -4,9 +4,10 @@ import jsonData from "../../animals.json";
 
 interface Props {
   setAnimals: (animals: Animal[]) => void;
+  setQueriedAnimals: (queriedAnimals: string) => void;
 }
 
-function Locations({ setAnimals }: Props) {
+function Locations({ setAnimals, setQueriedAnimals }: Props) {
   const handleLocation = (e: any) => {
     const allAnimals: Array<Animal> = jsonData.animals;
 
@@ -15,6 +16,9 @@ function Locations({ setAnimals }: Props) {
       (location) => location.location === e.target.innerHTML
     );
     setAnimals(newFilteredLocations);
+    setQueriedAnimals(
+      `Visar alla sökningar för ${newFilteredLocations[0].location}`
+    );
   };
 
   return (

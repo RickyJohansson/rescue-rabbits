@@ -1,4 +1,4 @@
-@use '../styles/base.scss';
+@use "../styles/base.scss";
 
 .adoptionContainer {
   width: 95%;
@@ -31,7 +31,10 @@
       width: 100%;
       padding: 4rem;
       padding-top: 0;
-      @include base.flex-column-center($justify: space-between, $direction: row);
+      @include base.flex-column-center(
+        $justify: space-between,
+        $direction: row
+      );
       flex-wrap: wrap;
 
       .flex-column {
@@ -137,6 +140,9 @@
     line-height: 2em;
     padding: 3rem;
     text-align: center;
+  }
+  button {
+    @extend %button;
   }
 }
 

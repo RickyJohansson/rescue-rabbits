@@ -1,4 +1,4 @@
-@use '../../styles/base';
+@use "../../styles/base";
 
 footer {
   grid-area: footer;
@@ -8,43 +8,43 @@ footer {
   @include base.flex-column-center($justify: space-evenly, $direction: row);
   padding: 2em;
   gap: 4em;
-}
 
-footer .footer__nav {
-  @include base.flex-column-center();
-}
+  .footer__nav {
+    @include base.flex-column-center();
 
-footer .footer__nav a {
-  text-decoration: none;
-  color: white;
-}
-
-footer p,
-footer a {
-  @extend %font-style-bread;
-  margin: 1em;
-  text-align: center;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  p,
+  a {
+    @extend %font-style-bread;
+    margin: 1em;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
   footer {
     display: flex;
     align-content: space-evenly;
-  }
-  footer .footer__social {
-    @include base.flex-column-center();
-  }
-  footer .socialWrapper {
-    @include base.flex-column-center($direction: row);
-    width: 100%;
-  }
 
-  footer .logoWrapper {
-    @include base.flex-column-center($direction: row);
-    flex-wrap: wrap;
-  }
+    .footer__social {
+      @include base.flex-column-center();
 
-  footer .footer__adress {
-    display: none;
+      .socialWrapper {
+        @include base.flex-column-center($direction: row);
+        width: 100%;
+      }
+
+      .logoWrapper {
+        @include base.flex-column-center($direction: row);
+        flex-wrap: wrap;
+      }
+    }
+    .footer__adress {
+      display: none;
+    }
   }
 }

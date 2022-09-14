@@ -1,78 +1,117 @@
-@use '../../styles/base';
+@use "../../styles/base";
+@use "../../styles/variables";
 
 header {
   grid-area: header;
   position: sticky;
   top: 0;
   z-index: 3;
-  background-color: #fec200;
+  background-color: variables.$orange;
   @include base.flex-column-center($justify: space-between, $direction: row);
   align-items: center;
   padding: 0 1em 0 1em;
+
+  .sidebar__overlay,
+  .hamburger {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+
+  .header__title {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+
+    h1 {
+      margin: 0 auto;
+      @extend %font-style-title;
+    }
+  }
 }
 
-header section {
+.header__search {
   display: flex;
   align-items: center;
-  gap: 1em;
-}
 
-header h1 {
-  margin: 0 auto;
-  @extend %font-style-title;
-}
+  input {
+    height: 2em;
+    outline: none;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: inset 0px 1px 5px 0px #676767;
+    border: none;
+    @extend %font-style-bread;
+  }
+  a {
+    cursor: pointer;
 
-header .search-btn {
-  width: 35px;
-
-  font-size: 36px;
-}
-
-header section input {
-  height: 2em;
-  outline: none;
-  border-radius: 10px;
-  text-align: center;
-  box-shadow: inset 0px 1px 5px 0px #676767;
-  border: none;
-  @extend %font-style-bread;
-}
-
-header section a:hover {
-  cursor: pointer;
-}
-
-header section .search-btn {
-  width: 35px;
-}
-
-.burgerMenu {
-  display: none;
+    .search-btn {
+      width: 35px;
+    }
+  }
 }
 
 @media screen and (max-width: 900px) {
   header {
     height: 5rem;
-  }
+    .sidebar__overlay {
+      display: none;
+      @include base.flex-column-center($justify: flex-start);
+      transform: translateY(360px) translateX(-2000px);
+      background-color: #f5f5f5;
+      z-index: 4;
+      border: 1px solid black;
+      ul {
+        list-style: none;
+        color: black;
+        padding: 0.5rem;
+        @include base.flex-column-center();
+        align-items: center;
+        a {
+          text-decoration: none;
+          margin: 0.5rem;
+        }
+      }
+      h1 {
+        font-size: 1.4em;
+        font-weight: 600;
+        line-height: 60px;
+      }
+    }
+    .hidden {
+      width: 50vw;
+      height: 90vh;
+      display: flex;
+      position: absolute;
+      border-radius: 20px;
+      align-items: center;
+      transform: translateY(410px) translateX(-18px);
+    }
+    .header__title {
+      width: 100%;
+      .hamburger {
+        display: flex;
+        height: 48px;
+        width: 48px;
+      }
 
-  header section a .logo {
-    display: none;
-  }
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
 
-  header section h1 {
-    font-size: 1.5rem;
-  }
-
-  header .header__title {
-    width: 100%;
-  }
-
-  header input {
-    width: 7rem;
-  }
-  .burgerMenu {
-    display: flex;
-    height: 48px;
-    width: 48px;
+      a {
+        .logo {
+          display: none;
+        }
+      }
+    }
+    .header__search {
+      header input {
+        width: 7rem;
+      }
+    }
   }
 }

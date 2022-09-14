@@ -11,29 +11,28 @@
   position: relative;
   border-radius: 5px;
 
-  :hover {
+  &:hover {
     cursor: pointer;
   }
-}
-.animalCard p {
-  font-size: 12px;
-  line-height: 12px;
-  margin: 0;
-}
-.animalCard h1 {
-  margin: 0;
-}
-.animalCard div {
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-}
-.animalCard .adoptedTag {
-  position: relative;
-  z-index: 1;
-}
-
-.animalCard img {
-  width: 100%;
-  aspect-ratio: 1;
+  p {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+  }
+  h1 {
+    margin: 0;
+  }
+  div {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    .adoptedTag {
+      position: relative;
+      z-index: 1;
+    }
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
 }

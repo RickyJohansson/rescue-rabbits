@@ -1,4 +1,4 @@
-@use '../../styles/base';
+@use "../../styles/base";
 
 nav {
   grid-area: nav;
@@ -6,6 +6,7 @@ nav {
   left: 0;
   bottom: 50;
   @include base.flex-column-center($direction: row);
+
   h1 {
     margin-top: 5rem;
     position: fixed;
@@ -13,6 +14,7 @@ nav {
     @extend %font-style-title;
     font-size: 1.8rem;
   }
+
   ul {
     @include base.flex-column-center($justify: flex-start);
     margin-top: 10rem;
@@ -20,6 +22,7 @@ nav {
     text-align: left;
     padding: 0;
     position: fixed;
+
     a {
       @extend %font-style-medium;
       text-align: center;
