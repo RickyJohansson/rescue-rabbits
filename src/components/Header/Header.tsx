@@ -38,7 +38,7 @@ function Header({
       sortSearch(query);
       setQueriedAnimals(`Visar alla sökningar för "${query}"`);
       navigate("/");
-      setHiddenCss(!hiddenCss);
+      setHiddenCss(true);
     }
   };
 
