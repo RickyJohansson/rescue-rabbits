@@ -33,7 +33,7 @@ function Header({
   };
 
   function navigateHome() {
-    navigate('/');
+    navigate("/");
   }
 
   const getInputValue: (event: any) => void = (event: any) => {
@@ -137,31 +137,33 @@ function Header({
           <a>Linköping</a>
         </ul> */}
       </div>
-      <section className="header__title">
-        <img
-          onClick={handleMenuClick}
-          className="hamburger"
-          src={burgerMenu}
-          alt=""
-        />
-        <a onClick={ navigateHome } href="">
-          <img className="logo" src={Logo} alt="" />
-        </a>
-        <a onClick={ navigateHome } href="" className="main-title">
-          Rescue Rabbits
-        </a>
-      </section>
-      <section className="header__search">
-        <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />
-        <a>
+      <div className="header__wrapper">
+        <section className="header__title">
           <img
-            onClick={() => sortSearch(query)}
-            className="search-btn"
-            src={Search_Btn}
+            onClick={handleMenuClick}
+            className="hamburger"
+            src={burgerMenu}
             alt=""
           />
-        </a>
-      </section>
+          <a onClick={navigateHome} href="">
+            <img className="logo" src={Logo} alt="" />
+          </a>
+          <a onClick={navigateHome} href="" className="main-title">
+            Rescue Rabbits
+          </a>
+        </section>
+        <section className="header__search">
+          <input onKeyUp={getInputValue} type="text" placeholder="SÖK" />
+          <a>
+            <img
+              onClick={() => sortSearch(query)}
+              className="search-btn"
+              src={Search_Btn}
+              alt=""
+            />
+          </a>
+        </section>
+      </div>
     </header>
   );
 }

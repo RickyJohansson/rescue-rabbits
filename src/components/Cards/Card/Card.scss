@@ -1,6 +1,7 @@
+@use "../../../styles/base";
 .animalCard {
   width: 16rem;
-  height: 20rem;
+  height: 28rem;
   padding: 1rem;
   margin: 2rem;
   -moz-box-shadow: 0px 1px 5px 0px #676767;
@@ -15,8 +16,8 @@
     cursor: pointer;
   }
   p {
-    font-size: 16px;
-    line-height: 18px;
+    @extend %font-style-bread;
+
     margin: 0;
   }
   h1 {
@@ -25,14 +26,21 @@
   div {
     position: absolute;
     z-index: 2;
-    top: 50%;
+    top: 30%;
     .adoptedTag {
       position: relative;
+
       z-index: 1;
     }
   }
   img {
     width: 100%;
     aspect-ratio: 1;
+  }
+  button {
+    @extend %button;
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 1rem;
   }
 }

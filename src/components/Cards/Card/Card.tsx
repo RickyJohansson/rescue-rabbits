@@ -17,7 +17,6 @@ const Card = ({
   setChosenAnimal,
   chosenAnimal,
 }: Props) => {
-  
   function handleAnimalClick() {
     setHiddenCss(!hiddenCss);
     setChosenAnimal(animal);
@@ -31,6 +30,7 @@ const Card = ({
           <p>Uppladdat: {animal.uploaded}</p>
           <p>{animal.age} år.</p>
           <p>Finns i {animal.location}.</p>
+          <button>Läs mer om {animal.name}</button>
           <div>
             <img
               className="adoptedTag"
@@ -50,6 +50,7 @@ const Card = ({
           <p>Uppladdat: {animal.uploaded}</p>
           <p>{animal.age} år.</p>
           <p>Finns i {animal.location}.</p>
+          <button>Läs mer om {animal.name}</button>
         </article>
       </>
     );

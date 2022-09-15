@@ -7,8 +7,6 @@ header {
   top: 0;
   z-index: 3;
   background-color: variables.$orange;
-  @include base.flex-column-center($justify: space-between, $direction: row);
-  align-items: center;
   padding: 0 1em 0 1em;
 
   .sidebar__overlay,
@@ -18,16 +16,20 @@ header {
     height: 0;
   }
 
-  .header__title {
-    display: flex;
+  .header__wrapper {
+    @include base.flex-column-center($justify: space-between, $direction: row);
     align-items: center;
-    gap: 1em;
+    .header__title {
+      display: flex;
+      align-items: center;
+      gap: 1em;
 
-    .main-title {
-      text-decoration: none;
-      @extend %font-style-title;
-      color: #232323;
-      margin: 0 auto;
+      .main-title {
+        text-decoration: none;
+        @extend %font-style-title;
+        color: #232323;
+        margin: 0 auto;
+      }
     }
   }
 }
@@ -56,7 +58,7 @@ header {
 
 @media screen and (max-width: 900px) {
   header {
-    height: 5rem;
+    height: 7rem;
     .sidebar__overlay {
       display: none;
       @include base.flex-column-center($justify: flex-start);
@@ -89,30 +91,38 @@ header {
       position: absolute;
       border-radius: 20px;
       align-items: center;
-      transform: translateY(216px) translateX(-18px);
+      transform: translateY(110px) translateX(-18px);
       animation: slide-in 0.35s ease-out;
     }
-    .header__title {
-      width: 100%;
-      .hamburger {
-        display: flex;
-        height: 48px;
-        width: 48px;
-      }
+    .header__wrapper {
+      @include base.flex-column-center();
+      .header__title {
+        width: 100%;
+        .hamburger {
+          display: flex;
+          height: 48px;
+          width: 48px;
+          position: absolute;
+          top: 30%;
+        }
 
-      a {
-        .logo {
-          display: none;
+        a {
+          .logo {
+            display: none;
+          }
+        }
+
+        .main-title {
+          font-size: 24px;
         }
       }
-
-      .main-title {
-        font-size: 24px;
-      }
-    }
-    .header__search {
-      input {
-        width: 5rem;
+      .header__search {
+        width: 100%;
+        display: flex;
+        @include base.flex-column-center($justify: flex-end, $direction: row);
+        input {
+          width: 70%;
+        }
       }
     }
   }
@@ -120,10 +130,10 @@ header {
 
 @keyframes slide-in {
   from {
-    transform: translateX(-500px) translateY(216px);
+    transform: translateX(-500px) translateY(110px);
   }
 
   to {
-    transform: translateX(-18px) translateY(216px);
+    transform: translateX(-18px) translateY(110px);
   }
 }
