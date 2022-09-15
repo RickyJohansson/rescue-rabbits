@@ -32,6 +32,10 @@ function Header({
     setMenuVisible(!menuVisible);
   };
 
+  function navigateHome() {
+    navigate('/');
+  }
+
   const getInputValue: (event: any) => void = (event: any) => {
     setQuery(event.target.value.toLowerCase());
     if (event.keyCode === 13) {
@@ -140,10 +144,10 @@ function Header({
           src={burgerMenu}
           alt=""
         />
-        <a href="">
+        <a onClick={ navigateHome } href="">
           <img className="logo" src={Logo} alt="" />
         </a>
-        <a href="" className="main-title">
+        <a onClick={ navigateHome } href="" className="main-title">
           Rescue Rabbits
         </a>
       </section>
