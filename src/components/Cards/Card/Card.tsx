@@ -17,6 +17,7 @@ const Card = ({
   setChosenAnimal,
   chosenAnimal,
 }: Props) => {
+  
   function handleAnimalClick() {
     setHiddenCss(!hiddenCss);
     setChosenAnimal(animal);
