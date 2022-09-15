@@ -10,7 +10,7 @@ import { Animal } from "./models/animalInterface";
 import { Routes, Route } from "react-router-dom";
 import AdoptionForm from "./Views/Adoptionform";
 
-let string =
+let welcome =
   "Rescue Rabbits är en ideell organisation som räddar djur från hem där djuren blivit illa behandlade, men även djur som blivit övergivna. Vi finns endast tack vare generösa donationer från den italienska maffian. För att donera kan du besöka Donationer-sidan";
 
 function App() {
@@ -19,8 +19,13 @@ function App() {
   const [chosenAnimal, setChosenAnimal] = useState<Animal>(jsonData.animals[1]);
   const [formView, setFormView] = useState<boolean>(true);
   const [adoptedCss, setAdoptedCss] = useState<boolean>(false);
-  const [queriedAnimals, setQueriedAnimals] = useState<string>(string);
+  const [queriedAnimals, setQueriedAnimals] = useState<string>(welcome);
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
+  const [userName, setUserName] = useState<string>("");
+  const [userEmail, setUserEmail] = useState<string>("");
+  const [userPhone, setUserPhone] = useState<string>("");
+  const [userAdress, setUserAdress] = useState<string>("");
+  const [userLastName, setUserLastName] = useState<string>("");
 
   return (
     <div className="App">
@@ -45,6 +50,16 @@ function App() {
           path="1"
           element={
             <AdoptionForm
+              setUserName={setUserName}
+              setUserEmail={setUserEmail}
+              setUserPhone={setUserPhone}
+              setUserAdress={setUserAdress}
+              setUserLastName={setUserLastName}
+              userName={userName}
+              userEmail={userEmail}
+              userPhone={userPhone}
+              userAdress={userAdress}
+              userLastName={userLastName}
               setFormView={setFormView}
               formView={formView}
               setHiddenCss={setHiddenCss}

@@ -58,6 +58,7 @@ function Header({
     setAnimals(newFilteredAnimals);
     setQueriedAnimals(`Visar alla sökningar för "${query}"`);
     navigate("/");
+    setHiddenCss(true);
   };
 
   const handleOverlayCategory = (e: any) => {

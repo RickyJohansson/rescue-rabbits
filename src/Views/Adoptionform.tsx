@@ -7,6 +7,16 @@ interface Props {
   setFormView: (formView: boolean) => void;
   formView: boolean;
   chosenAnimal: Animal;
+  setUserName: (userName: string) => void;
+  setUserEmail: (userEmail: string) => void;
+  setUserPhone: (userPhone: string) => void;
+  setUserAdress: (userAdress: string) => void;
+  setUserLastName: (userLastName: string) => void;
+  userName: string;
+  userEmail: string;
+  userPhone: string;
+  userAdress: string;
+  userLastName: string;
 }
 
 const adoptionForm = ({
@@ -14,6 +24,16 @@ const adoptionForm = ({
   setFormView,
   formView,
   chosenAnimal,
+  setUserName,
+  setUserEmail,
+  setUserPhone,
+  setUserAdress,
+  setUserLastName,
+  userName,
+  userEmail,
+  userPhone,
+  userAdress,
+  userLastName,
 }: Props) => {
   const navigate = useNavigate();
 
@@ -27,9 +47,21 @@ const adoptionForm = ({
     event.target.value;
   };
 
-  const submitHandler: () => void = () => {
-    setFormView(!formView);
-    console.log(formView);
+  const submitHandler: (e: any) => void = (e) => {
+    if (
+      userName &&
+      userEmail &&
+      userPhone &&
+      userAdress &&
+      userLastName != ""
+    ) {
+      setFormView(!formView);
+      setUserName("");
+      setUserEmail("");
+      setUserPhone("");
+      setUserAdress("");
+      setUserLastName("");
+    }
   };
   if (formView) {
     return (
@@ -48,6 +80,9 @@ const adoptionForm = ({
             <div className="flex-column">
               <label htmlFor="phonenumber">Telefonnummer</label>
               <input
+                onChange={(e) => {
+                  setUserPhone(e.target.value);
+                }}
                 required
                 type="text"
                 id="phonenumber"
@@ -58,6 +93,9 @@ const adoptionForm = ({
             <div className="flex-column">
               <label htmlFor="fname">Förnamn</label>
               <input
+                onChange={(e) => {
+                  setUserName(e.target.value);
+                }}
                 required
                 type="text"
                 id="fname"
@@ -68,6 +106,9 @@ const adoptionForm = ({
             <div className="flex-column">
               <label htmlFor="lname">Efternamn</label>
               <input
+                onChange={(e) => {
+                  setUserLastName(e.target.value);
+                }}
                 required
                 type="text"
                 id="lname"
@@ -78,6 +119,9 @@ const adoptionForm = ({
             <div className="flex-column">
               <label htmlFor="email">E-post</label>
               <input
+                onChange={(e) => {
+                  setUserEmail(e.target.value);
+                }}
                 required
                 type="text"
                 id="email"
@@ -89,6 +133,9 @@ const adoptionForm = ({
             <div className="flex-column">
               <label htmlFor="adress">Adress</label>
               <textarea
+                onChange={(e) => {
+                  setUserAdress(e.target.value);
+                }}
                 className="adress-field"
                 required
                 id="adress"
