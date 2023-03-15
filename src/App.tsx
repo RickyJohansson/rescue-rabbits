@@ -11,7 +11,7 @@ import { Routes, Route } from "react-router-dom";
 import AdoptionForm from "./Views/Adoptionform";
 
 let welcome =
-  " som räddar djur från hem där djuren blivit illa behandlade, men även djur som blivit övergivna. Vi finns endast tack vare generösa donationer från den italienska maffian. För att donera kan du besöka Donationer-sidan";
+  "Rescue Rabbits är en ideell organisation som räddar djur från hem där djuren blivit illa behandlade, men även djur som blivit övergivna. Vi finns endast tack vare generösa donationer från den italienska maffian. För att donera kan du besöka Donationer-sidan";
 
 function App() {
   const [animals, setAnimals] = useState<Animal[]>(jsonData.animals);
